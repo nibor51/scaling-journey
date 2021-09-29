@@ -1,250 +1,299 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="asset/css/css.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/app.css">
-    <link rel="shortcut icon" href="asset/img/favicon/" type="image/x-icon">
     <link rel="stylesheet" href="asset/css/footer.css">
+    <link rel="shortcut icon" href="asset/img/favicon/" type="image/x-icon">
     <title>Reims Quizz</title>
 </head>
+
 <body>
-<nav class="navbar navbar-light bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d9.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-        Reims Quizz
-      </a>
-      <button class="btn" type="submit">Start</button>
-    </div>
-  </nav>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d9.png" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Reims Quizz
+            </a>
+            <button class="btn" type="submit">Start</button>
+        </div>
+    </nav>
+
+    <!-- main accueil -->
     <div class="card card-index">
         <div class="card-body card-index">
-          <h5 class="card-title">Reims Quizz</h5>
-          <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
-          <a href="#question1"  class="btn btn-primary button-width">Play</a>
+            <h5 class="card-title">Reims Quizz</h5>
+            <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
+            <a href="#one" class="btn btn-primary button-width">Play</a>
         </div>
-      </div>
-   <section id="game">
-           <form oninput="result.value=parseInt(questionOne.value)+parseInt(questionThree.value)+parseInt(questionFour.value)+parseInt(questionFive.value)+parseInt(questionSex.value)+parseInt(questionSeven.value)+parseInt(questionEight.value)+parseInt(questionNine.value)+parseInt(questionTen.value)">
-        <section id="question">
-            <section id="question1">
-                <h1 class="test">1 La Population de la Ville ? </h1>
-                    <label for="Q1-a">- 125 000</label><input type="radio" name="questionOne" value="0" id="Q1-a" >
-                    <label for="Q1-b">- 150 000</label><input type="radio" name="questionOne" value="0" id="Q1-b" >
-                    <label for="Q1-c">- 175 000</label><input type="radio" name="questionOne" value="0" id="Q1-c" >
-                    <label for="Q1-d">- 185 000</label><input type="radio" name="questionOne" value="1" id="Q1-d" >
-            </section>
-            <section>
-                <h1>Réponse 185 000  !</h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Des années 50 à 70 la ville de Reims passa de 130 000 à 180 000 habitants. <br>Depuis 50 ans la population reste pratiquement la même.
-                     Reims est actuellement la 12 ème ville de France.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
-        
-        <section>
-            <section>
-                <h1>2- Quel était le nom de la ville de Reims à l'époque Galo Romaine ? </h1>
-                
-                    <label for="Q2-a">- Rodium</label><input type="radio" name="questionTwo" value="0" id="Q2-a" >
-                    <label for="Q2-b">- Durocorturum</label><input type="radio" name="questionTwo" value="1" id="Q2-b" >
-                    <label for="Q2-c">- Camaracum</label><input type="radio" name="questionTwo" value="0" id="Q2-c" >
-                    <label for="Q2-d">- Reimzorum</label><input type="radio" name="questionTwo" value="0" id="Q2-d" >
+    </div>
 
-            </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Selon la légende, Reims fut créée par Remus, le frère du fondateur de la Rome antique. <br>Le peuple celte qui habitait la région aurait pris de ce fait le nom de Rèmes.
-                        <br>Après la conquête romaine, Reims baptisée alors Durocortorum est intégrée à la province de Belgique et en devient la capitale.
-                        <br>À son apogée, avec ses 30 000 habitants, la cité gallo-romaine était devenue l’une des plus peuplées au nord des Alpes.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
+    <!-- survey -->
+        <form id="game"
+            oninput="result.value=parseInt(questionOne.value)+parseInt(questionThree.value)+parseInt(questionFour.value)+parseInt(questionFive.value)+parseInt(questionSex.value)+parseInt(questionSeven.value)+parseInt(questionEight.value)+parseInt(questionNine.value)+parseInt(questionTen.value)" >
 
-        <section>
-            <section>
-                <h1>3- Comment se nomme cette porte ? </h1>
-                
-                    <label for="Q3-a">- La Porte de Paris</label><input type="radio" name="questionThree" value="0" id="Q3-a" >
-                    <label for="Q3-b">- La Porte de la Liberté</label><input type="radio" name="questionThree" value="0" id="Q3-b" >
-                    <label for="Q3-c">- La Porte de Mars</label><input type="radio" name="questionThree" value="1" id="Q3-c" >
-                    <label for="Q3-d">- La Porte de Vénus</label><input type="radio" name="questionThree" value="0" id="Q3-d" >
+            <section id="question">
+                <section id="question one">
+                    <h1 class="test">1 La Population de la Ville ? </h1>
+                    <label for="Q1-a">- 125 000</label><input type="radio" name="questionOne" value="0" id="Q1-a">
+                    <label for="Q1-b">- 150 000</label><input type="radio" name="questionOne" value="0" id="Q1-b">
+                    <label for="Q1-c">- 175 000</label><input type="radio" name="questionOne" value="0" id="Q1-c">
+                    <label for="Q1-d">- 185 000</label><input type="radio" name="questionOne" value="1" id="Q1-d">
+                </section>
+                <section>
+                    <h1>Réponse 185 000 !</h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Des années 50 à 70 la ville de Reims passa de 130 000 à 180 000 habitants. <br>Depuis 50 ans
+                            la population reste pratiquement la même.
+                            Reims est actuellement la 12 ème ville de France.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
             </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>La Porte de Mars est la seule des quatre portes permettant l'accès à la ville antique encore visible aujourd'hui. <br>
-                        Elle  a été construite au 3ème siècle.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
 
-        <section>
             <section>
-                <h1>4- Quand la première pierre de la cathédrale de Reims fut poser?</h1>
-                
-                    <label for="Q4-a">- 946</label><input type="radio" name="questionFour" value="0" id="Q4-a" >
-                    <label for="Q4-b">- 1005</label><input type="radio" name="questionFour" value="0" id="Q4-b" >
-                    <label for="Q4-c">- 1212</label><input type="radio" name="questionFour" value="1" id="Q4-c" >
-                    <label for="Q4-d">- 1384</label><input type="radio" name="questionFour" value="0" id="Q4-d" >
-            </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Notre-Dame de Reims est l’une des réalisations majeures de l’art gothique en Europe. 
-                        Inscrite sur la Liste du patrimoine mondial de l’UNESCO, cette cathédrale du XIIIe siècle présente des traits qui la rende unique, notamment par son unité de style, sa luminosité et sa statuaire.<br> 
-                        Fortement endommagée pendant la première guerre mondiale, elle comporte une prouesse architecturale du XXe siècle : <br>
-                        une charpente en béton armé élaborée par l'achitectre Henri Deneux, ainsi qu'un riche ensemble de vitraux contemporains dont certains contemporains dessinés par Marc Chagall (1974) et Imi Knoebel (2011 et 2015).</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
+                <section>
+                    <h1>2- Quel était le nom de la ville de Reims à l'époque Galo Romaine ? </h1>
 
-        <section>
-            <section>
-                <h1>5- Combien de roi de France ont été sacré à la catédrale de Reims ?  </h1>
-                
-                    <label for="Q5-a">- 4</label><input type="radio" name="questionFive" value="0" id="Q5-a" >
-                    <label for="Q5-b">- 8</label><input type="radio" name="questionFive" value="0" id="Q5-b" >
-                    <label for="Q5-c">- 23</label><input type="radio" name="questionFive" value="0" id="Q5-c" >
-                    <label for="Q5-d">- 31</label><input type="radio" name="questionFive" value="1" id="Q5-d" >
-            </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>A partir du XIe siècle, presque tous les rois de France se sont fait sacrer à Reims, jusqu’à Charles X en 1825.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
+                    <label for="Q2-a">- Rodium</label><input type="radio" name="questionTwo" value="0" id="Q2-a">
+                    <label for="Q2-b">- Durocorturum</label><input type="radio" name="questionTwo" value="1" id="Q2-b">
+                    <label for="Q2-c">- Camaracum</label><input type="radio" name="questionTwo" value="0" id="Q2-c">
+                    <label for="Q2-d">- Reimzorum</label><input type="radio" name="questionTwo" value="0" id="Q2-d">
 
-        <section>
-            <section>
-                <h1>6- Comment se nomme cette place ? </h1>
-                
-                    <label for="Q6-a">- Place Ducale</label><input type="radio" name="questionSex" value="0" id="Q6-a" >
-                    <label for="Q6-b">- Place Drouet d'Erlon</label><input type="radio" name="questionSex" value="1" id="Q6-b" >
-                    <label for="Q6-c">- Place Royal</label><input type="radio" name="questionSex" value="0" id="Q6-c" >
-                    <label for="Q6-d">- Place du Forum</label><input type="radio" name="questionSex" value="0" id="Q6-d" >
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Selon la légende, Reims fut créée par Remus, le frère du fondateur de la Rome antique. <br>Le
+                            peuple celte qui habitait la région aurait pris de ce fait le nom de Rèmes.
+                            <br>Après la conquête romaine, Reims baptisée alors Durocortorum est intégrée à la province
+                            de Belgique et en devient la capitale.
+                            <br>À son apogée, avec ses 30 000 habitants, la cité gallo-romaine était devenue l’une des
+                            plus peuplées au nord des Alpes.
+                        </p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
             </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Aux beaux jours, la Place Drouet-d'Erlon au centre de Reims, est le plus souvent noire de monde, à l'heure du déjeuner, notamment.<br> 
-                        Avec ses 20.000 m2, les terrasses, au fil du temps s'y sont multipliées.<br> Elles y occupent aujourd'hui 3.710 m2, ce qui en fait en quelque sorte, la plus grande terrasse de France.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
 
-        <section>
             <section>
-                <h1>7- Où a été signé les actes de capitulation du Troisième Reich à Reims ?</h1>
-                
-                    <label for="Q7-a">- Sur le canal de la Marne </label><input type="radio" name="questionSeven" value="0" id="Q7-a" >
-                    <label for="Q7-b">- Aux portes de la catédrale de Reims</label><input type="radio" name="questionSeven" value="0" id="Q7-b" >
-                    <label for="Q7-c">- Dans la mairie de Reims</label><input type="radio" name="questionSeven" value="0" id="Q7-c" >
-                    <label for="Q7-d">- Dans une salle du collège technique de Reims</label><input type="radio" name="questionSeven" value="1" id="Q7-d" >
-            </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Vous pouvez vous rendre au musée de la Reddition situé dans une partie des locaux du lycée Franklin-Roosevelt à Reims où eut lieu la signature. 
-                    </p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
+                <section>
+                    <h1>3- Comment se nomme cette porte ? </h1>
 
-        <section>
-            <section>
-                <h1>8- Comment se nomme cette satue ?</h1>
-                
-                    <label for="Q8-a">- L'ange au sourire</label><input type="radio" name="questionEight" value="1" id="Q8-a" >
-                    <label for="Q8-b">- L'ange gardien</label><input type="radio" name="questionEight" value="0" id="Q8-b" >
-                    <label for="Q8-c">- L'ange souriant</label><input type="radio" name="questionEight" value="0" id="Q8-c" >
-                    <label for="Q8-d">- L'ange de la catédrale</label><input type="radio" name="questionEight" value="0" id="Q8-d" >
+                    <label for="Q3-a">- La Porte de Paris</label><input type="radio" name="questionThree" value="0"
+                        id="Q3-a">
+                    <label for="Q3-b">- La Porte de la Liberté</label><input type="radio" name="questionThree" value="0"
+                        id="Q3-b">
+                    <label for="Q3-c">- La Porte de Mars</label><input type="radio" name="questionThree" value="1"
+                        id="Q3-c">
+                    <label for="Q3-d">- La Porte de Vénus</label><input type="radio" name="questionThree" value="0"
+                        id="Q3-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>La Porte de Mars est la seule des quatre portes permettant l'accès à la ville antique encore
+                            visible aujourd'hui. <br>
+                            Elle a été construite au 3ème siècle.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
             </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Le sourire énigmatique de cet ange devient pendant la première guerre mondiale le symbole de la cathédrale martyre, puis rapidement la symbole de la ville de Reims. <br>
-                        Il porte depuis le nom d’Ange au sourire.</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
 
-        <section>
             <section>
-                <h1>9- Comment appelle-t-on les habitants de Reims ? </h1>
-                
-                    <label for="Q9-a">-Les reimsois</label><input type="radio" name="questionNine" value="0" id="Q9-a" >
-                    <label for="Q9-b">- Les rémois</label><input type="radio" name="questionNine" value="1" id="Q9-b" >
-                    <label for="Q9-c">- Les rétiriens</label><input type="radio" name="questionNine" value="0" id="Q9-c" >
-                    <label for="Q9-d">- Les rémolois</label><input type="radio" name="questionNine" value="0" id="Q9-d" >
-            </section>
-            <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Je sais pas quoi mettre désolé les bgs</p>
-                    <img src="" alt="" srcset="">
-                </article>
-            </section>
-        </section>
+                <section>
+                    <h1>4- Quand la première pierre de la cathédrale de Reims fut poser?</h1>
 
-        <section>
-            <section>
-                <h1>10- Quelle est la première maison de Champagne de Reims ?</h1>
-                
-                    <label for="Q10-a">- Champagne Mum</label><input type="radio" name="questionTen" value="0" id="Q10-a" >
-                    <label for="Q10-b">- Champagne Charles de Cazanove</label><input type="radio" name="questionTen" value="0" id="Q10-b" >
-                    <label for="Q10-c">- Champagne Moet et Chandon</label><input type="radio" name="questionTen" value="0" id="Q10-c" >
-                    <label for="Q10-d">- Champagne Ruinart</label><input type="radio" name="questionTen" value="1" id="Q10-d" >
+                    <label for="Q4-a">- 946</label><input type="radio" name="questionFour" value="0" id="Q4-a">
+                    <label for="Q4-b">- 1005</label><input type="radio" name="questionFour" value="0" id="Q4-b">
+                    <label for="Q4-c">- 1212</label><input type="radio" name="questionFour" value="1" id="Q4-c">
+                    <label for="Q4-d">- 1384</label><input type="radio" name="questionFour" value="0" id="Q4-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Notre-Dame de Reims est l’une des réalisations majeures de l’art gothique en Europe.
+                            Inscrite sur la Liste du patrimoine mondial de l’UNESCO, cette cathédrale du XIIIe siècle
+                            présente des traits qui la rende unique, notamment par son unité de style, sa luminosité et
+                            sa statuaire.<br>
+                            Fortement endommagée pendant la première guerre mondiale, elle comporte une prouesse
+                            architecturale du XXe siècle : <br>
+                            une charpente en béton armé élaborée par l'achitectre Henri Deneux, ainsi qu'un riche
+                            ensemble de vitraux contemporains dont certains contemporains dessinés par Marc Chagall
+                            (1974) et Imi Knoebel (2011 et 2015).</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
             </section>
+
             <section>
-                <h1></h1>
-                <article>
-                    <h2>A savoir ;)</h2>
-                    <p>Des kilomètres de galeries souterraines...Des millions de bouteilles de champagne précieusement conservées à l’abri de la lumière et de la chaleur...<br>
-                        À Reims, les visites de caves des plus grandes maisons de champagne font partie des incontournables. Et ça pétille d’histoires et de savoir-faire.</p>
-                    <img src="" alt="" srcset="">
-                </article>
+                <section>
+                    <h1>5- Combien de roi de France ont été sacré à la catédrale de Reims ? </h1>
+
+                    <label for="Q5-a">- 4</label><input type="radio" name="questionFive" value="0" id="Q5-a">
+                    <label for="Q5-b">- 8</label><input type="radio" name="questionFive" value="0" id="Q5-b">
+                    <label for="Q5-c">- 23</label><input type="radio" name="questionFive" value="0" id="Q5-c">
+                    <label for="Q5-d">- 31</label><input type="radio" name="questionFive" value="1" id="Q5-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>A partir du XIe siècle, presque tous les rois de France se sont fait sacrer à Reims, jusqu’à
+                            Charles X en 1825.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
             </section>
-        </section>
 
-        <section>
-            <!-- resultat -->
-            <output name="result">0</output>
-        </section>
+            <section>
+                <section>
+                    <h1>6- Comment se nomme cette place ? </h1>
 
-    </form>
-   </section>
+                    <label for="Q6-a">- Place Ducale</label><input type="radio" name="questionSex" value="0" id="Q6-a">
+                    <label for="Q6-b">- Place Drouet d'Erlon</label><input type="radio" name="questionSex" value="1"
+                        id="Q6-b">
+                    <label for="Q6-c">- Place Royal</label><input type="radio" name="questionSex" value="0" id="Q6-c">
+                    <label for="Q6-d">- Place du Forum</label><input type="radio" name="questionSex" value="0"
+                        id="Q6-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Aux beaux jours, la Place Drouet-d'Erlon au centre de Reims, est le plus souvent noire de
+                            monde, à l'heure du déjeuner, notamment.<br>
+                            Avec ses 20.000 m2, les terrasses, au fil du temps s'y sont multipliées.<br> Elles y
+                            occupent aujourd'hui 3.710 m2, ce qui en fait en quelque sorte, la plus grande terrasse de
+                            France.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>7- Où a été signé les actes de capitulation du Troisième Reich à Reims ?</h1>
+
+                    <label for="Q7-a">- Sur le canal de la Marne </label><input type="radio" name="questionSeven"
+                        value="0" id="Q7-a">
+                    <label for="Q7-b">- Aux portes de la catédrale de Reims</label><input type="radio"
+                        name="questionSeven" value="0" id="Q7-b">
+                    <label for="Q7-c">- Dans la mairie de Reims</label><input type="radio" name="questionSeven"
+                        value="0" id="Q7-c">
+                    <label for="Q7-d">- Dans une salle du collège technique de Reims</label><input type="radio"
+                        name="questionSeven" value="1" id="Q7-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Vous pouvez vous rendre au musée de la Reddition situé dans une partie des locaux du lycée
+                            Franklin-Roosevelt à Reims où eut lieu la signature.
+                        </p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>8- Comment se nomme cette satue ?</h1>
+
+                    <label for="Q8-a">- L'ange au sourire</label><input type="radio" name="questionEight" value="1"
+                        id="Q8-a">
+                    <label for="Q8-b">- L'ange gardien</label><input type="radio" name="questionEight" value="0"
+                        id="Q8-b">
+                    <label for="Q8-c">- L'ange souriant</label><input type="radio" name="questionEight" value="0"
+                        id="Q8-c">
+                    <label for="Q8-d">- L'ange de la catédrale</label><input type="radio" name="questionEight" value="0"
+                        id="Q8-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Le sourire énigmatique de cet ange devient pendant la première guerre mondiale le symbole de
+                            la cathédrale martyre, puis rapidement la symbole de la ville de Reims. <br>
+                            Il porte depuis le nom d’Ange au sourire.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>9- Comment appelle-t-on les habitants de Reims ? </h1>
+
+                    <label for="Q9-a">-Les reimsois</label><input type="radio" name="questionNine" value="0" id="Q9-a">
+                    <label for="Q9-b">- Les rémois</label><input type="radio" name="questionNine" value="1" id="Q9-b">
+                    <label for="Q9-c">- Les rétiriens</label><input type="radio" name="questionNine" value="0"
+                        id="Q9-c">
+                    <label for="Q9-d">- Les rémolois</label><input type="radio" name="questionNine" value="0" id="Q9-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Je sais pas quoi mettre désolé les bgs</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h1>10- Quelle est la première maison de Champagne de Reims ?</h1>
+
+                    <label for="Q10-a">- Champagne Mum</label><input type="radio" name="questionTen" value="0"
+                        id="Q10-a">
+                    <label for="Q10-b">- Champagne Charles de Cazanove</label><input type="radio" name="questionTen"
+                        value="0" id="Q10-b">
+                    <label for="Q10-c">- Champagne Moet et Chandon</label><input type="radio" name="questionTen"
+                        value="0" id="Q10-c">
+                    <label for="Q10-d">- Champagne Ruinart</label><input type="radio" name="questionTen" value="1"
+                        id="Q10-d">
+                </section>
+                <section>
+                    <h1></h1>
+                    <article>
+                        <h2>A savoir ;)</h2>
+                        <p>Des kilomètres de galeries souterraines...Des millions de bouteilles de champagne
+                            précieusement conservées à l’abri de la lumière et de la chaleur...<br>
+                            À Reims, les visites de caves des plus grandes maisons de champagne font partie des
+                            incontournables. Et ça pétille d’histoires et de savoir-faire.</p>
+                        <img src="" alt="" srcset="">
+                    </article>
+                </section>
+            </section>
+
+            <section>
+                <!-- resultat -->
+                <output name="result">0</output>
+            </section>
+
+        </form>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="copyright-footer">
             <p>Copyright 2021 Company,inc</p>
         </div>
         <div class="logo-footer">
-            <img class="size-img" src="asset/img/logo.png" alt="">
+            <img class="size-img" src="asset/img/logo.png" alt="logo">
         </div>
         <div class="nav-footer">
             <ul>
@@ -254,5 +303,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
+
 </html>

@@ -9,6 +9,7 @@
     text-decoration: none;
     color: black;
 }
+
 .nav-footer ul {
     display: flex;
     flex-direction: column;
@@ -21,23 +22,16 @@
     height: 50px;
 }
 
-@media screen and (min-width: 800px){
-
+@media screen and (min-width: 800px) {
     .footer {
-        display: flex;
         justify-content: space-between;
         flex-direction: row;
-        align-items: center;
     }
-
     .nav-footer ul {
-        display: flex;
         flex-direction: row;
     }
-
     .nav-footer ul li {
         list-style-type: none;
         padding: 1rem;
     }
-
 }
