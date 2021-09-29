@@ -1,13 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+/* *************** MAIN / ACCUEIL *************** */
+
+.card-index {
+    height: 93.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+}
+
+.button-width {
+    width: 15rem;
+    background-color: #EE2122;
+    border: white 1px;
+}
+
+/* *************** SURVEY *************** */
+
+#survey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    padding: 1rem;
+}
+
+/* *************** FOOTER *************** */
+
+.footer {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-footer ul {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    list-style-type: none;
+}
+
+.size-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* *************** CREDITS *************** */
+
 #image_carousel {
-  max-width: 30%;
-  margin-top: 30%;
-  width: 80%;
-  margin-left: 10%;
+    max-width: 30%;
+    margin-top: 30%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 ;
 #carousel-item.active {
-  margin: auto;
+    margin: auto;
 }
 
 ;
+@media screen and (min-width: 800px) {
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** FOOTER *************** */
+    .footer {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .nav-footer ul {
+        flex-direction: row;
+    }
+    .nav-footer ul li {
+        list-style-type: none;
+        padding: 1rem;
+    }
+    /* *************** CREDITS *************** */
+}
