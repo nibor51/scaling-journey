@@ -5,9 +5,11 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
+
+/* *************** NAVBAR *************** */
 
 /* *************** MAIN / ACCUEIL *************** */
 
@@ -31,18 +33,14 @@ body {
 
 /* *************** SURVEY *************** */
 
-#survey {
+/* .survey {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-form section {
+.no-scroll {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 label {
@@ -91,6 +89,7 @@ label {
 
 ;
 @media screen and (min-width: 800px) {
+    /* *************** NAVBAR *************** */
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** FOOTER *************** */
