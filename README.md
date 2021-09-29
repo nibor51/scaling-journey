@@ -1,2 +1,2 @@
 # scaling-journey
-First project at Wild Code School | Quiz Reims
+First project at Wild Code School | Quizz Reims
