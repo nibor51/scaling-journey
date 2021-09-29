@@ -33,18 +33,22 @@ body {
 
 /* *************** SURVEY *************** */
 
-/* .survey {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.no-scroll{background-color:pink;}
+/* .no-scroll>h1{background-color: red;}
+.debug{background-color: blue;} */
+
+
+.question-title {
+    font-size: 2rem;
+    padding: 3rem;
+}
 
 .no-scroll {
     height: 100vh;
 }
 
 label {
-    padding: 1rem;
+    margin: 1rem;
 }
 
 /* *************** FOOTER *************** */
