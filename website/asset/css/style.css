@@ -1,12 +1,11 @@
 #image_carousel{
   max-width: 30%;
     margin-top: 30%;
-   width: 80%;
+
+    width: 80%;
     margin-left: 10%;
-}
+};
 
 #carousel-item.active{
     margin: auto;
-}
-
-
+};
