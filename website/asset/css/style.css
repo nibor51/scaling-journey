@@ -4,7 +4,7 @@
     height: auto;
     display: flex;
     margin-left: 10%;
-};
+}
 
 #carousel-item.active{
     display: grid;
