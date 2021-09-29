@@ -1,12 +1,11 @@
 #image_carousel{
-    margin-top: 30%;
-   width: 80%;
-    height: auto;
-    display: flex;
-    margin-left: 10%;
+  max-width: 30%;
+  margin: auto;
 };
 
 #carousel-item.active{
     display: grid;
-    justify-content: center;
+    margin: auto;
 }
+
+
