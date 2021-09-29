@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css.css" rel="stylesheet">
+    <link href="asset/css/css.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/app.css">
     <link rel="shortcut icon" href="asset/img/favicon/" type="image/x-icon">
     <link rel="stylesheet" href="asset/css/footer.css">
     <title>Reims Quizz</title>
 </head>
 <body>
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-light bg-white">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d9.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
@@ -22,18 +22,17 @@
     </div>
   </nav>
     <div class="card card-index">
-        <div class="card-body">
+        <div class="card-body card-index">
           <h5 class="card-title">Reims Quizz</h5>
           <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
-          <a href="#" class="btn btn-primary">Play</a>
+          <a href="#question1"  class="btn btn-primary button-width">Play</a>
         </div>
       </div>
    <section id="game">
            <form oninput="result.value=parseInt(questionOne.value)+parseInt(questionThree.value)+parseInt(questionFour.value)+parseInt(questionFive.value)+parseInt(questionSex.value)+parseInt(questionSeven.value)+parseInt(questionEight.value)+parseInt(questionNine.value)+parseInt(questionTen.value)">
-        <section>
-            <section>
-                <h1>1-  La Population de la Ville ? </h1>
-                
+        <section id="question">
+            <section id="question1">
+                <h1 class="test">1 La Population de la Ville ? </h1>
                     <label for="Q1-a">- 125 000</label><input type="radio" name="questionOne" value="0" id="Q1-a" >
                     <label for="Q1-b">- 150 000</label><input type="radio" name="questionOne" value="0" id="Q1-b" >
                     <label for="Q1-c">- 175 000</label><input type="radio" name="questionOne" value="0" id="Q1-c" >
@@ -58,6 +57,7 @@
                     <label for="Q2-b">- Durocorturum</label><input type="radio" name="questionTwo" value="1" id="Q2-b" >
                     <label for="Q2-c">- Camaracum</label><input type="radio" name="questionTwo" value="0" id="Q2-c" >
                     <label for="Q2-d">- Reimzorum</label><input type="radio" name="questionTwo" value="0" id="Q2-d" >
+
             </section>
             <section>
                 <h1></h1>
