@@ -20,13 +20,13 @@ body {
     border: white 1px;
 }
 
-#game {
+#survey {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section section {
+form section {
     height: 100vh;
     display: flex;
     justify-content: center;
