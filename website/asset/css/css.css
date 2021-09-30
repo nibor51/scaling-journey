@@ -1,0 +1,59 @@
+
+*  {
+    overflow:hidden;
+}
+
+
+.card-index {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+}
+
+.button-width {
+    width: 15rem;
+    background-color:#EE2122;
+    border: white 1px;
+    
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+section section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+label {
+    justify-content: center;
+    align-items: center;    
+}
+
+input {
+     padding: 5rem;
+ }
+
+div {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+

@@ -15,7 +15,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-white">
+    <nav class="navbar navbar-light bg-white sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c4d9.png" alt="" width="30" height="24"
@@ -33,7 +33,18 @@
             <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
             <a href="#q-one" class="btn btn-primary button-width">Play</a>
         </div>
-    </div>
+      </div>
+   <section id="game">
+           <form oninput="result.value=parseInt(questionOne.value)+parseInt(questionThree.value)+parseInt(questionFour.value)+parseInt(questionFive.value)+parseInt(questionSex.value)+parseInt(questionSeven.value)+parseInt(questionEight.value)+parseInt(questionNine.value)+parseInt(questionTen.value)">
+        
+                <h1></h1>
+                <article>
+                    <h2></h2>
+                    <p></p>
+                    <img src="" alt="" srcset="">
+                </article>
+            </section>
+        </section>
 
     <!-- survey -->
     <form class="survey"
@@ -43,6 +54,7 @@
         <div>
             <section id="q-one"
                 class="no-scroll question one d-flex justify-content-center align-items-center flex-column">
+                
                 <h1 class="question-title">1 La Population de la Ville ? </h1>
                 <div class="debug btn-group-vertical">
                     <div class="">
@@ -54,6 +66,7 @@
                         <label class="btn btn-secondary" for="Q1-b">- 150 000</label>
 
                     </div>
+
                     <div class="">
                         <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-c">
                         <label class="btn btn-secondary" for="Q1-c">- 175 000</label>
@@ -61,10 +74,12 @@
                         <input class="btn-check" type="radio" name="questionOne" value="1" id="Q1-d">
                         <label class="btn btn-secondary" for="Q1-d">- 185 000</label>
                     </div>
+                    <a href="#a-one" class="btn btn-primary button-width mt-3">Réponse</a>
+
                 </div>
             </section>
 
-            <section id="a-one" class="no-scroll answer one">
+            <section id="a-one" class="no-scroll answer one d-flex justify-content-center align-items-center flex-column">
                 <h1>Réponse 185 000 !</h1>
                 <article>
                     <h2>A savoir ;)</h2>
@@ -73,6 +88,7 @@
                         Reims est actuellement la 12 ème ville de France.</p>
                     <img src="" alt="" srcset="">
                 </article>
+                <a href="#a-one" class="btn btn-primary button-width mt-3">Suivant</a>
             </section>
         </div>
 
