@@ -84,7 +84,7 @@ label {
 
 /* *************** CREDITS *************** */
 
-#image_carousel {
+/* #image_carousel {
     max-width: 30%;
     margin-top: 30%;
     width: 80%;
@@ -94,7 +94,7 @@ label {
 
 #carousel-item.active {
     margin: auto;
-}
+} */
 
 @media screen and (min-width: 800px) {
 
