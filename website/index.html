@@ -33,7 +33,7 @@
             <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
             <a href="#q-one" class="btn btn-primary button-width">Play</a>
         </div>
-      </div>
+    </div>
 
     <!-- survey -->
     <form class="survey"
@@ -43,10 +43,10 @@
         <div>
             <section id="q-one"
                 class="no-scroll question one d-flex justify-content-center align-items-center flex-column">
-                
+
                 <h1 class="question-title">1 La Population de la Ville ? </h1>
                 <div class="debug btn-group-vertical">
-                    <div class="">
+                    <div>
 
                         <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-a">
                         <label class="btn btn-secondary" for="Q1-a">- 125 000</label>
@@ -56,7 +56,7 @@
 
                     </div>
 
-                    <div class="">
+                    <div>
                         <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-c">
                         <label class="btn btn-secondary" for="Q1-c">- 175 000</label>
 
@@ -68,7 +68,8 @@
                 </div>
             </section>
 
-            <section id="a-one" class="no-scroll answer one d-flex justify-content-center align-items-center flex-column">
+            <section id="a-one"
+                class="no-scroll answer one d-flex justify-content-center align-items-center flex-column">
                 <h1>Réponse 185 000 !</h1>
                 <article>
                     <h2>A savoir ;)</h2>
@@ -77,7 +78,7 @@
                         Reims est actuellement la 12 ème ville de France.</p>
                     <img src="" alt="" srcset="">
                 </article>
-                <a href="#a-one" class="btn btn-primary button-width mt-3">Suivant</a>
+                <a href="#q-two" class="btn btn-primary button-width mt-3">Suivant</a>
             </section>
         </div>
 
@@ -85,16 +86,31 @@
         <div>
             <section id="q-two"
                 class="no-scroll question two d-flex flex-column justify-content-center align-items-center">
-                <h1>2- Quel était le nom de la ville de Reims à l'époque Galo Romaine ? </h1>
 
-                <label for="Q2-a">- Rodium</label><input type="radio" name="questionTwo" value="0" id="Q2-a">
-                <label for="Q2-b">- Durocorturum</label><input type="radio" name="questionTwo" value="1" id="Q2-b">
-                <label for="Q2-c">- Camaracum</label><input type="radio" name="questionTwo" value="0" id="Q2-c">
-                <label for="Q2-d">- Reimzorum</label><input type="radio" name="questionTwo" value="0" id="Q2-d">
+                <h1 class="question-title">2- Quel était le nom de la ville de Reims à l'époque Galo Romaine ? </h1>
+                <div class="debug btn-group-vertical">
+                    <div>
+                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-a">
+                        <label class="btn btn-secondary" for="Q2-a">- Rodium</label>
+                        <input class="btn-check" type="radio" name="questionTwo" value="1" id="Q2-b">
+                        <label class="btn btn-secondary" for="Q2-b">- Durocorturum</label>
+                    </div>
+
+                    <div>
+                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-c">
+                        <label class="btn btn-secondary" for="Q2-c">- Camaracum</label>
+                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-d">
+                        <label class="btn btn-secondary" for="Q2-d">- Reimzorum</label>
+                    </div>
+                    <a href="#a-two" class="btn btn-primary button-width mt-3">Réponse</a>
+                </div>
+
+
 
             </section>
-            <section id="a-two" class="no-scroll answer two">
-                <h1></h1>
+            <section id="a-two"
+                class="no-scroll answer two d-flex justify-content-center align-items-center flex-column">
+                <h1>durocorturum</h1>
                 <article>
                     <h2>A savoir ;)</h2>
                     <p>Selon la légende, Reims fut créée par Remus, le frère du fondateur de la Rome antique. <br>Le
@@ -106,25 +122,39 @@
                     </p>
                     <img src="" alt="" srcset="">
                 </article>
+                <a href="#q-three" class="btn btn-primary button-width mt-3">Suivant</a>
             </section>
         </div>
 
         <!-- Question three -->
         <div>
-            <section>
-                <h1>3- Comment se nomme cette porte ? </h1>
+            <section id="q-three"
+                class="no-scroll question three d-flex justify-content-center align-items-center flex-column">
 
-                <label for="Q3-a">- La Porte de Paris</label><input type="radio" name="questionThree" value="0"
-                    id="Q3-a">
-                <label for="Q3-b">- La Porte de la Liberté</label><input type="radio" name="questionThree" value="0"
-                    id="Q3-b">
-                <label for="Q3-c">- La Porte de Mars</label><input type="radio" name="questionThree" value="1"
-                    id="Q3-c">
-                <label for="Q3-d">- La Porte de Vénus</label><input type="radio" name="questionThree" value="0"
-                    id="Q3-d">
+                <h1 class="question-title">3- Comment se nomme cette porte ? </h1>
+                <div class="debug btn-group-vertical">
+                    <div>
+                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-a">
+                        <label class="btn btn-secondary" for="Q3-a">- La Porte de Paris</label>
+
+                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-b">
+                        <label for="Q3-b">- La Porte de la Liberté</label>
+                    </div>
+
+                    <div>
+                        <input class="btn-check" type="radio" name="questionThree" value="1" id="Q3-c">
+                        <label class="btn btn-secondary" for="Q3-c">- La Porte de Mars</label>
+
+                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-d">
+                        <label class="btn btn-secondary" for="Q3-d">- La Porte de Vénus</label>
+                    </div>
+                    <a href="#a-three" class="btn btn-primary button-width mt-3">Réponse</a>
+                </div>
             </section>
-            <section>
-                <h1></h1>
+
+            <section id="a-three"
+                class="no-scroll answer three d-flex justify-content-center align-items-center flex-column">
+                <h1>La Porte de Mars</h1>
                 <article>
                     <h2>A savoir ;)</h2>
                     <p>La Porte de Mars est la seule des quatre portes permettant l'accès à la ville antique encore
@@ -132,10 +162,13 @@
                         Elle a été construite au 3ème siècle.</p>
                     <img src="" alt="" srcset="">
                 </article>
+                <a href="#result" class="btn btn-primary button-width mt-3">Suivant</a>
             </section>
         </div>
+<!-- 
+       
 
-        <!-- Question four -->
+
         <div>
             <section>
                 <h1>4- Quand la première pierre de la cathédrale de Reims fut poser?</h1>
@@ -163,7 +196,9 @@
             </section>
         </div>
 
-        <!-- Question five -->
+        
+
+
         <div>
             <section>
                 <h1>5- Combien de roi de France ont été sacré à la catédrale de Reims ? </h1>
@@ -184,7 +219,9 @@
             </section>
         </div>
 
-        <!-- Question six -->
+        
+
+
         <div>
             <section>
                 <h1>6- Comment se nomme cette place ? </h1>
@@ -209,7 +246,9 @@
             </section>
         </div>
 
-        <!-- Question seven -->
+        
+        
+
         <div>
             <section>
                 <h1>7- Où a été signé les actes de capitulation du Troisième Reich à Reims ?</h1>
@@ -235,7 +274,9 @@
             </section>
         </div>
 
-        <!-- Question eight -->
+        
+        
+
         <div>
             <section>
                 <h1>8- Comment se nomme cette satue ?</h1>
@@ -259,7 +300,9 @@
             </section>
         </div>
 
-        <!-- Question nine -->
+        
+        
+
         <div>
             <section>
                 <h1>9- Comment appelle-t-on les habitants de Reims ? </h1>
@@ -279,7 +322,9 @@
             </section>
         </div>
 
-        <!-- Question ten -->
+        
+        
+
         <div>
             <section>
                 <h1>10- Quelle est la première maison de Champagne de Reims ?</h1>
@@ -303,12 +348,17 @@
                     <img src="" alt="" srcset="">
                 </article>
             </section>
-        </div>
+        </div> 
+    -->
+
+
 
         <!-- resultat -->
-        <section>
+        <section id="result" class="no-scroll result d-flex justify-content-center align-items-center flex-column">
             <h1>Résultat</h1>
+            <p>Bravo tu a obtenu</p>
             <output name="result">0</output>
+            <p>réponse bonne !</p>
         </section>
 
     </form>
