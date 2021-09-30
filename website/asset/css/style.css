@@ -50,6 +50,12 @@ body {
 label {
     margin: 1rem;
 }
+/* *************** RESULT *************** */
+
+.result {
+    height: calc(93.5vh - 20vh);
+    background-color: pink;
+}
 
 /* *************** FOOTER *************** */
 
@@ -58,6 +64,8 @@ label {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    height: 20vh;
+    background-color: lightslategray;
 }
 .nav-footer ul {
     display: inline;
