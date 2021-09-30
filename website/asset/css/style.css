@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 /* *************** NAVBAR *************** */
@@ -54,10 +54,18 @@ label {
 /* *************** FOOTER *************** */
 
 .footer {
-    border-top: 1px solid black;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+}
+.nav-footer ul {
+    display: inline;
+    list-style-type: none;
+}
+.nav-footer ul li {
+    list-style-type: none;
+    padding: 1rem;
 }
 
 .nav-footer ul li a {
@@ -65,17 +73,6 @@ label {
     color: black;
 }
 
-.nav-footer ul {
-    display: flex;
-    flex-direction: column;
-    display: inline;
-    list-style-type: none;
-}
-
-.size-img {
-    width: 50px;
-    height: 50px;
-}
 
 /* *************** CREDITS *************** */
 
@@ -86,27 +83,33 @@ label {
     margin-left: 10%;
 }
 
-;
+
 #carousel-item.active {
     margin: auto;
 }
 
-;
 @media screen and (min-width: 800px) {
-    /* *************** NAVBAR *************** */
+
+     /* *************** NAVBAR *************** */
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** FOOTER *************** */
+   
+   
+
     .footer {
+        border-top: 1px solid black;
         justify-content: space-between;
         flex-direction: row;
     }
-    .nav-footer ul {
-        flex-direction: row;
-    }
+    
     .nav-footer ul li {
-        list-style-type: none;
-        padding: 1rem;
+        padding: 10px;
+    }
+    
+    .nav-footer ul {
+        display: flex;
+        flex-direction: row;
     }
     /* *************** CREDITS *************** */
 }
