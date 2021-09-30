@@ -5,9 +5,11 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
+
+/* *************** NAVBAR *************** */
 
 /* *************** MAIN / ACCUEIL *************** */
 
@@ -31,22 +33,22 @@ body {
 
 /* *************** SURVEY *************** */
 
-#survey {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.no-scroll{background-color:pink;}
+/* .no-scroll>h1{background-color: red;}
+.debug{background-color: blue;} */
+
+
+.question-title {
+    font-size: 2rem;
+    padding: 3rem;
 }
 
-form section {
+.no-scroll {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 label {
-    padding: 1rem;
+    margin: 1rem;
 }
 
 /* *************** FOOTER *************** */
@@ -91,6 +93,7 @@ label {
 
 ;
 @media screen and (min-width: 800px) {
+    /* *************** NAVBAR *************** */
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** FOOTER *************** */
