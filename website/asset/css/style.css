@@ -84,17 +84,12 @@ label {
 
 /* *************** CREDITS *************** */
 
-/* #image_carousel {
-    max-width: 30%;
-    margin-top: 30%;
+ .card-img-top {
+    margin: 10%;
     width: 80%;
-    margin-left: 10%;
+
 }
 
-
-#carousel-item.active {
-    margin: auto;
-} */
 
 @media screen and (min-width: 800px) {
 
