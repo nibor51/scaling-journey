@@ -50,6 +50,12 @@ body {
 label {
     margin: 1rem;
 }
+/* *************** RESULT *************** */
+
+.result {
+    height: calc(93.5vh - 20vh);
+    background-color: pink;
+}
 
 /* *************** FOOTER *************** */
 
@@ -58,6 +64,8 @@ label {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    height: 20vh;
+    background-color: lightslategray;
 }
 .nav-footer ul {
     display: inline;
@@ -80,7 +88,7 @@ label {
 
 /* *************** CREDITS *************** */
 
-#image_carousel {
+/* #image_carousel {
     max-width: 30%;
     margin-top: 30%;
     width: 80%;
@@ -90,7 +98,7 @@ label {
 
 #carousel-item.active {
     margin: auto;
-}
+} */
 
 @media screen and (min-width: 800px) {
 
