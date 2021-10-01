@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="asset/img/favicon/" type="image/x-icon">
     <link rel="stylesheet" href="asset/css/style.css">
+    
     <title>Reims Quizz</title>
 </head>
 
@@ -37,8 +38,7 @@
 
 
     <!-- survey -->
-    <form class="survey"
-        oninput="result.value=parseInt(questionOne.value)+parseInt(questionThree.value)+parseInt(questionFour.value)+parseInt(questionFive.value)+parseInt(questionSex.value)+parseInt(questionSeven.value)+parseInt(questionEight.value)+parseInt(questionNine.value)+parseInt(questionTen.value)">
+    <main class="survey">
 
         <!-- Question one -->
         <div>
@@ -49,20 +49,20 @@
                 <div class="debug btn-group-vertical">
                     <div>
 
-                        <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-a">
-                        <label class="btn btn-secondary" for="Q1-a">- 125 000</label>
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-secondary" for="Q1-a">125 000</label>
 
-                        <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-b">
-                        <label class="btn btn-secondary" for="Q1-b">- 150 000</label>
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-secondary" for="Q1-b">150 000</label>
 
                     </div>
 
                     <div>
-                        <input class="btn-check" type="radio" name="questionOne" value="0" id="Q1-c">
-                        <label class="btn btn-secondary" for="Q1-c">- 175 000</label>
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class="btn btn-secondary" for="Q1-c">175 000</label>
 
-                        <input class="btn-check" type="radio" name="questionOne" value="1" id="Q1-d">
-                        <label class="btn btn-secondary" for="Q1-d">- 185 000</label>
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-secondary" for="Q1-d">185 000</label>
                     </div>
                     <a href="#a-one" class="btn btn-primary button-width mt-3">Réponse</a>
 
@@ -88,20 +88,21 @@
             <section id="q-two"
                 class="no-scroll question two d-flex flex-column justify-content-center align-items-center">
 
+
                 <h1 class="question-title">2- Quel était le nom de la ville de Reims à l'époque Galo Romaine ? </h1>
                 <div class="debug btn-group-vertical">
                     <div>
-                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-a">
-                        <label class="btn btn-secondary" for="Q2-a">- Rodium</label>
-                        <input class="btn-check" type="radio" name="questionTwo" value="1" id="Q2-b">
-                        <label class="btn btn-secondary" for="Q2-b">- Durocorturum</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-a">
+                        <label class="btn btn-secondary" for="Q2-a">Rodium</label>
+                        <input class="btn-check" type="radio"  name="question2" value="correct" id="Q2-b">
+                        <label class="btn btn-secondary" for="Q2-b">Durocorturum</label>
                     </div>
 
                     <div>
-                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-c">
-                        <label class="btn btn-secondary" for="Q2-c">- Camaracum</label>
-                        <input class="btn-check" type="radio" name="questionTwo" value="0" id="Q2-d">
-                        <label class="btn btn-secondary" for="Q2-d">- Reimzorum</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-c">
+                        <label class="btn btn-secondary" for="Q2-c">Camaracum</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-d">
+                        <label class="btn btn-secondary" for="Q2-d">Reimzorum</label>
                     </div>
                     <a href="#a-two" class="btn btn-primary button-width mt-3">Réponse</a>
                 </div>
@@ -111,7 +112,7 @@
             </section>
             <section id="a-two"
                 class="no-scroll answer two d-flex justify-content-center align-items-center flex-column">
-                <h1>durocorturum</h1>
+                <h1>Durocorturum</h1>
                 <article>
                     <h2>A savoir ;)</h2>
                     <p>Selon la légende, Reims fut créée par Remus, le frère du fondateur de la Rome antique. <br>Le
@@ -135,18 +136,18 @@
                 <h1 class="question-title">3- Comment se nomme cette porte ? </h1>
                 <div class="debug btn-group-vertical">
                     <div>
-                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-a">
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
                         <label class="btn btn-secondary" for="Q3-a">Porte de Paris</label>
 
-                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-b">
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
                         <label class="btn btn-secondary" for="Q3-b">Porte de Liberté</label>
                     </div>
 
                     <div>
-                        <input class="btn-check" type="radio" name="questionThree" value="1" id="Q3-c">
+                        <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
                         <label class="btn btn-secondary" for="Q3-c">Porte de Mars</label>
 
-                        <input class="btn-check" type="radio" name="questionThree" value="0" id="Q3-d">
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
                         <label class="btn btn-secondary" for="Q3-d">Porte de Vénus</label>
                     </div>
                     <a href="#a-three" class="btn btn-primary button-width mt-3">Réponse</a>
@@ -357,12 +358,13 @@
         <!-- resultat -->
         <section id="result" class="result d-flex justify-content-center align-items-center flex-column">
             <h1>Résultat</h1>
-            <p>Bravo tu a obtenu</p>
-            <output name="result">0</output>
-            <p>réponse bonne !</p>
+            <p>Bravo tu as obtenu</p>
+            <p id="resultat"></p>
+            <p>bonne réponses !</p>
+            <button href="result" onclick="getResults()">
+            </button>
         </section>
-
-    </form>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -370,7 +372,7 @@
             <p>Copyright 2021 Company,inc</p>
         </div>
         <div class="logo-footer">
-            <img class="../img/imagesquestionnairees.txt/size-img" src="https://ibb.co/j5FVnnz" alt="logo">
+            <img class="size-img" src="https://picsum.photos/50" alt="">
         </div>
         <div class="nav-footer">
             <ul>
@@ -380,7 +382,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="asset/js/app.js"></script>
 </body>
 
 </html>
