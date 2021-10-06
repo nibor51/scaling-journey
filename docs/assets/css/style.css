@@ -39,6 +39,10 @@ body {
     color: black;
 }
 
+.mt-3 {
+    padding-left: 2rem;
+}
+
 .button-width {
     width: 15rem;
     background-color: #EE2122;
@@ -49,12 +53,12 @@ body {
     display: flex;
 }
 
-.btn {
-    background-color: var(--secondary-color);
+.btn-home {
     color: white;
+    background-color: var(--secondary-color);
 }
 
-.btn:hover {
+.btn-home:hover {
     background-color:var(--third-color);
     color: black;
 }
