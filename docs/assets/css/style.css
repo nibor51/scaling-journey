@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-color: #3537b9;
-    --secondary-color: #f79d26;
+    --main-color: #EDA51F;
+    --secondary-color: #E40019;
+    --third-color: #ECECEC;
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -23,9 +24,53 @@ body {
     /*overflow: hidden;*/
 }
 
-/* *************** NAVBAR *************** */
 
-/* *************** MAIN / ACCUEIL *************** */
+/* *************** MAIN / ACCUEIL / NAVBAR*************** */
+
+#color-nav{
+    background-color: var(--main-color);
+}
+
+#contain {
+    justify-content: space-around;
+}
+
+.style-titre {
+    color: black;
+}
+
+.mt-3 {
+    padding-left: 2rem;
+}
+
+.button-width {
+    width: 15rem;
+    background-color: #EE2122;
+    border: white 1px;
+}
+
+.btn-nav{
+    display: flex;
+}
+
+.btn-home {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.btn-home:hover {
+    background-color:var(--third-color);
+    color: black;
+}
+
+.btn3:hover {
+    background-color:var(--main-color);
+    color: black;
+}
+
+.btn2 {
+    margin-left: 1em;
+}
 
 .card-index {
     height: 93.5vh;
@@ -39,9 +84,18 @@ body {
     border-radius: 0;
 }
 
+
+.card, .card-body {
+    background-color: var(--third-color);
+}
+
+.card-body {
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
 .button-width {
     width: 15rem;
-    background-color: #EE2122;
+    background-color: var(--secondary-color);
     border: white 1px;
 }
 
@@ -50,6 +104,19 @@ body {
 .no-scroll {
     background-color: pink;
 }
+
+.contenant {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+.texte_centrer {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 /* .no-scroll>h1{background-color: red;}
 .debug{background-color: blue;} */
@@ -72,7 +139,7 @@ label {
 
 .result {
     height: calc(93.5vh - 20vh);
-    background-color: pink;
+    background-color: var(--third-color);
 }
 
 /* *************** CREDITS *************** */
@@ -103,6 +170,16 @@ label {
 
 @media (min-width: 576px) {
     /* *************** NAVBAR *************** */
+
+    #contain {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-body {
+        border: 1px solid var(--main-color);
+    }
+
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -112,6 +189,7 @@ label {
 
 @media (min-width: 768px) {
     /* *************** NAVBAR *************** */
+ 
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -122,6 +200,12 @@ label {
 
 @media (min-width: 992px) {
     /* *************** NAVBAR *************** */
+
+    .card-body {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -137,6 +221,10 @@ label {
 
 @media (min-width: 1200px) {
     /* *************** NAVBAR *************** */
+    .card-body {
+        padding-left: 20em;
+        padding-right: 20em;
+    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -154,6 +242,10 @@ label {
 
 @media (min-width: 1400px) {
     /* *************** NAVBAR *************** */
+    .card-body {
+        padding-left: 30em;
+        padding-right: 30em;
+    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
