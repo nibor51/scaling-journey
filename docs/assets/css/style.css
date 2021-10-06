@@ -91,6 +91,10 @@ label {
 
     #carousel{
         background-color: #EDA51F;
+        ;
+    }
+    .carousel-item {
+        height: cal(100vh-6.5vh);
     }
     
 /* X-Small devices (portrait phones, less than 576px)
@@ -122,8 +126,8 @@ label {
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
-    .carousel-control-next .carousel-control-prev{
-        visibility: visible ;
+    .carousel-control-prev, .carousel-control-next{
+        visibility: visible;
     }
     .carousel-item.active{
         resize: both;
@@ -137,6 +141,9 @@ label {
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
+    .card-img-top {
+        width: 450px;
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
