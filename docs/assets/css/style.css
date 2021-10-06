@@ -144,6 +144,11 @@ label {
     .card-img-top {
         width: 450px;
     }
+    
+    .d-block {
+        text-align: center;
+    }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
