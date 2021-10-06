@@ -90,8 +90,7 @@ label {
     }
 
     #carousel{
-        background-color: #EDA51F;
-        ;
+        background-color:#ECECEC;
     }
     .carousel-item {
         height: cal(100vh-6.5vh);
