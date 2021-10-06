@@ -5,8 +5,8 @@
 
 :root {
     --main-color: #EDA51F;
-    --secondary-color: #E40019;
-    --third-color: #ECECEC;
+--secondary-color: #E40019;
+--third-color: #ECECEC; 
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -21,57 +21,11 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-
-   overflow: hidden;
 }
 
+/* *************** NAVBAR *************** */
 
-/* *************** MAIN / ACCUEIL / NAVBAR*************** */
-
-#color-nav{
-    background-color: var(--main-color);
-}
-
-#contain {
-    justify-content: space-around;
-}
-
-.style-titre {
-    color: black;
-}
-
-.mt-3 {
-    padding-left: 2rem;
-}
-
-.button-width {
-    width: 15rem;
-    background-color: #EE2122;
-    border: white 1px;
-}
-
-.btn-nav{
-    display: flex;
-}
-
-.btn-home {
-    color: white;
-    background-color: var(--secondary-color);
-}
-
-.btn-home:hover {
-    background-color:var(--third-color);
-    color: black;
-}
-
-.btn3:hover {
-    background-color:var(--main-color);
-    color: black;
-}
-
-.btn2 {
-    margin-left: 1em;
-}
+/* *************** MAIN / ACCUEIL *************** */
 
 .card-index {
     height: 93.5vh;
@@ -85,19 +39,9 @@ body {
     border-radius: 0;
 }
 
-
-.card, .card-body {
-    background-color: var(--third-color);
-}
-
-.card-body {
-    color: black;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
 .button-width {
     width: 15rem;
-    background-color: var(--secondary-color);
+    background-color: #EE2122;
     border: white 1px;
 }
 
@@ -106,19 +50,6 @@ body {
 .no-scroll {
     background-color: whitesmoke;
 }
-
-.contenant {
-    position: relative;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-  
-.texte_centrer {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
 /* .no-scroll>h1{background-color: red;}
 .debug{background-color: blue;} */
@@ -129,55 +60,25 @@ body {
 }
 
 .no-scroll {
-    height: 93.5vh;
+    height: 100vh;
 }
 
 
-
-.answer-title {
-    font-size: 2rem;
-    padding: 0 1.5rem;
-}
-.toKnow {
-    padding: 1.5rem 3rem ;
-}
-.answer > img {
-    width: 200px ;
-    height: 300px ;
-}
-.answer {
-    background-color: var(--third-color);
-}
 
 /* *************** RESULT *************** */
 
 .result {
     height: calc(93.5vh - 20vh);
     background-color: whitesmoke;
-    background-color: var(--third-color);
 }
 
 /* *************** CREDITS *************** */
 
-    section img{
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;    
-    }
-    
-    .carousel-item.active{
-        margin: auto;
-    }
+.card-img-top {
+    margin: 10%;
+    width: 80%;
+}
 
-    .carousel-control-prev, .carousel-control-next{
-        visibility: hidden;
-    }
-
-    #carousel{
-        background-color:#ECECEC;
-    }
-    .carousel-item {
-        height: cal(100vh-6.5vh);
-    }
-    
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
@@ -185,82 +86,46 @@ body {
 
 @media (min-width: 576px) {
     /* *************** NAVBAR *************** */
-
-    #contain {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card-body {
-        border: 1px solid var(--main-color);
-    }
-
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
+
     /* *************** CREDITS *************** */
-    
+    .shadows {
+        padding: 1rem;
+    }
 }
+
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
     /* *************** NAVBAR *************** */
- 
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
-
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
     /* *************** NAVBAR *************** */
-
-    .card-body {
-        padding-left: 10em;
-        padding-right: 10em;
-    }
-
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
-    .carousel-control-prev, .carousel-control-next{
-        visibility: visible;
-    }
-    .carousel-item.active{
-        resize: both;
-    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
     /* *************** NAVBAR *************** */
-    .card-body {
-        padding-left: 20em;
-        padding-right: 20em;
-    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
-    .card-img-top {
-        width: 450px;
-    }
-    
-    .d-block {
-        text-align: center;
-    }
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
     /* *************** NAVBAR *************** */
-    .card-body {
-        padding-left: 30em;
-        padding-right: 30em;
-    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -280,10 +145,3 @@ input, label {
     background-color: var(--main-color) !important;
 }
 
-.height {
-    height: 37%;
-}
-
-.heightqt {
-    width: 5;
-}
