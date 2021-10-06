@@ -77,11 +77,14 @@ label {
 
 /* *************** CREDITS *************** */
 
-.card-img-top {
-    margin: 10%;
-    width: 80%;
-}
+    section img{
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;    }
 
+    .carousel-item.active{
+    margin: auto;
+        }
+
+   
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
