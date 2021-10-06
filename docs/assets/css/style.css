@@ -58,34 +58,6 @@ label {
     background-color: pink;
 }
 
-/* *************** FOOTER *************** */
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
-    background-color: lightslategray;
-}
-.nav-footer ul {
-    display: inline;
-    list-style-type: none;
-}
-.nav-footer ul li {
-    list-style-type: none;
-    padding: 1rem;
-}
-
-.nav-footer ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.size-img {
-    width: 50px;
-    height: 50px;
-}
-
 /* *************** CREDITS *************** */
 
  .card-img-top {
@@ -100,25 +72,6 @@ label {
      /* *************** NAVBAR *************** */
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
-    /* *************** FOOTER *************** */
-   
-   
-
-    .footer {
-        align-items: center;
-        border-top: 1px solid black;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    
-    .nav-footer ul li {
-        padding: 10px;
-    }
-    
-    .nav-footer ul {
-        display: flex;
-        flex-direction: row;
-    }
 }
     /* *************** CREDITS *************** */
 .shadows {
