@@ -25,14 +25,48 @@ body {
 }
 
 
-
-/* *************** NAVBAR *************** */
+/* *************** MAIN / ACCUEIL / NAVBAR*************** */
 
 #color-nav{
     background-color: var(--main-color);
 }
 
-/* *************** MAIN / ACCUEIL *************** */
+#contain {
+    justify-content: space-around;
+}
+
+.style-titre {
+    color: black;
+}
+
+.button-width {
+    width: 15rem;
+    background-color: #EE2122;
+    border: white 1px;
+}
+
+.btn-nav{
+    display: flex;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color:var(--third-color);
+    color: black;
+}
+
+.btn3:hover {
+    background-color:var(--main-color);
+    color: black;
+}
+
+.btn2 {
+    margin-left: 1em;
+}
 
 .card-index {
     height: 93.5vh;
@@ -46,14 +80,14 @@ body {
     border-radius: 0;
 }
 
-.button-width {
-    width: 15rem;
-    background-color: #EE2122;
-    border: white 1px;
+.card, .card-body {
+    background-color: var(--third-color);
 }
 
-.btn-nav{
-    display: flex;
+.card-body {
+    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /* *************** SURVEY *************** */
@@ -100,6 +134,16 @@ label {
 
 @media (min-width: 576px) {
     /* *************** NAVBAR *************** */
+
+    #contain {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-body {
+        border: 1px solid var(--main-color);
+    }
+
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
 
@@ -113,6 +157,7 @@ label {
 
 @media (min-width: 768px) {
     /* *************** NAVBAR *************** */
+ 
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -122,6 +167,12 @@ label {
 
 @media (min-width: 992px) {
     /* *************** NAVBAR *************** */
+
+    .card-body {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -131,6 +182,10 @@ label {
 
 @media (min-width: 1200px) {
     /* *************** NAVBAR *************** */
+    .card-body {
+        padding-left: 20em;
+        padding-right: 20em;
+    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -140,6 +195,10 @@ label {
 
 @media (min-width: 1400px) {
     /* *************** NAVBAR *************** */
+    .card-body {
+        padding-left: 30em;
+        padding-right: 30em;
+    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
