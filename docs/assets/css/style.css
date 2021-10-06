@@ -21,7 +21,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    /*overflow: hidden;*/
+
+   overflow: hidden;
 }
 
 
@@ -103,7 +104,7 @@ body {
 /* *************** SURVEY *************** */
 
 .no-scroll {
-    background-color: pink;
+    background-color: whitesmoke;
 }
 
 .contenant {
@@ -131,10 +132,7 @@ body {
     height: 93.5vh;
 }
 
-label {
-    margin: 1rem;
-    filter: drop-shadow(0px 5px 2px black);
-}
+
 
 .answer-title {
     font-size: 2rem;
@@ -155,6 +153,7 @@ label {
 
 .result {
     height: calc(93.5vh - 20vh);
+    background-color: whitesmoke;
     background-color: var(--third-color);
 }
 
@@ -265,4 +264,26 @@ label {
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
+}
+
+input, label {
+   margin-bottom: 1rem;
+}
+
+.height {
+    height: 33%;
+}
+
+
+
+#bg-warning {
+    background-color: var(--main-color) !important;
+}
+
+.height {
+    height: 37%;
+}
+
+.heightqt {
+    width: 5;
 }

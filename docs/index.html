@@ -15,7 +15,6 @@
 <body>
 
     <!-- navbar -->
-
     <nav id="color-nav" class="navbar sticky-top">
         <div class="container-fluid" id="contain">
             <a class="navbar-brand" id="size-navbar-brand" href="#">
@@ -51,26 +50,24 @@
         <div>
             <section id="q-one"
                 class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center">
-                <div class="contenant">
-                    <img src="assets\img\bulle.png" alt="image" width="300" height="200">
-                    <div class="texte_centrer">1 La Population de la Ville ?</div>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-secondary" for="Q1-a">125 000</label>
+                <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">La Population de la Ville ? </h1>
+                <div class=" btn-group-vertical height w-50">
+
+                    <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
 
                         <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-secondary" for="Q1-b">150 000</label>
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">150 000</label>
 
-                    </div>
-
-                    <div>
+                   
                         <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class="btn btn-secondary" for="Q1-c">175 000</label>
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">175 000</label>
 
                         <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-secondary" for="Q1-d">185 000</label>
-                    </div>
-                    <a href="#a-one" class="btn btn-primary button-width mt-3">Réponse</a>
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
+                   
+                    <a href="#a-one" onclick="resultOne(1)" class="btn btn-warning shadow text-white heightqt mt-3">Réponse</a>
 
                 </div>
             </section>
@@ -78,7 +75,10 @@
 
             <section id="a-one"
                 class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center">
+
                 <div  class="answer-title">
+                <p id="resultat1"></p>
+
                     <p>La bonne réponse est :</p>
                     <h1>185 000 !</h1>
                 </div>
@@ -100,18 +100,18 @@
                 <div class="debug btn-group-vertical">
                     <div>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-a">
-                        <label class="btn btn-secondary" for="Q2-a">Rodium</label>
+                        <label class=" btn btn-outline-warning  " for="Q2-a">Rodium</label>
                         <input class="btn-check" type="radio" name="question2" value="correct" id="Q2-b">
-                        <label class="btn btn-secondary" for="Q2-b">Durocorturum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-b">Durocorturum</label>
                     </div>
 
                     <div>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-c">
-                        <label class="btn btn-secondary" for="Q2-c">Camaracum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-c">Camaracum</label>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-d">
-                        <label class="btn btn-secondary" for="Q2-d">Reimzorum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-d">Reimzorum</label>
                     </div>
-                    <a href="#a-two" class="btn btn-primary button-width mt-3">Réponse</a>
+                    <a href="#a-two" onclick="resultOne(2)" class="btn btn-primary button-width mt-3">Réponse</a>
                 </div>
 
 
@@ -119,6 +119,7 @@
 
             <section id="a-two"
                 class="no-scroll answer two d-flex justify-content-center align-items-center flex-column text-center">
+                <p id="resultat2"></p>
                 <h1>Durocorturum</h1>
                 <article>
                     <h2>A savoir ;)</h2>
@@ -144,18 +145,18 @@
                 <div class="debug btn-group-vertical">
                     <div>
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
-                        <label class="btn btn-secondary" for="Q3-a">Porte de Paris</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-a">Porte de Paris</label>
 
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
-                        <label class="btn btn-secondary" for="Q3-b">Porte de Liberté</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-b">Porte de Liberté</label>
                     </div>
 
                     <div>
                         <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
-                        <label class="btn btn-secondary" for="Q3-c">Porte de Mars</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-c">Porte de Mars</label>
 
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
-                        <label class="btn btn-secondary" for="Q3-d">Porte de Vénus</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-d">Porte de Vénus</label>
                     </div>
                     <a href="#a-three" class="btn btn-primary button-width mt-3">Réponse</a>
                 </div>
@@ -171,7 +172,7 @@
                         visible aujourd'hui. <br>
                         Elle a été construite au 3ème siècle.</p>
                 </article>
-                <a href="#result" class="btn btn-primary button-width mt-3">Suivant</a>
+                <a href="#result" onclick="getResults()"class="btn btn-primary button-width mt-3">Suivant</a>
             </section>
         </div>
         <!-- 
@@ -363,11 +364,15 @@
 
 
         <!-- START resultat -->
-        <section id="result" class="result d-flex justify-content-center align-items-center flex-column">
+
+      
+        <section id="result" class="result d-flex justify-content-center align-items-center vh-100  shadow-sm p-3 rounded flex-column">
             <h1>Résultat</h1>
             <p>Bravo tu as obtenu</p>
             <p id="resultat"></p>
             <p>bonnes réponses !</p>
+            <div class="inline p-md-2">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=ReimsQuiz&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="true">ReimsQuiz</a>
         </section>
     </main>
     <!-- END resultat -->
@@ -474,6 +479,9 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="mllUsEvQ"></script>
 </body>
 
 </html>
