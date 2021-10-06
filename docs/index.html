@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="asset/img/favicon/" type="image/x-icon">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Reims Quizz</title>
 </head>
 
@@ -362,14 +362,19 @@
             <p>réponse bonne !</p>
         </section>
         <!--Carousel-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+
     </form>
     <div id="carouselExampleControls" class="carousel slide no-scroll" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <div class="carousel-item active">
                 <!-- card origin-->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/Grobin-min.JPG" class="card-img-top" alt="Robin Jonval">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/Grobin-min.JPG" class="card-img-top" alt="Robin Jonval">
                     <div class="card-body">
                         <h5 class="card-title">Robin Jonval</h5>
                         <p class="card-text">Mail pro : jonval.robin@gmail.com <br>
@@ -381,8 +386,8 @@
 
             <div class="carousel-item">
                 <!-- card class de l'image du carousel -->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/Neo-min.JPG" class="card-img-top" alt="Marvin Crepin">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/Neo-min.JPG" class="card-img-top" alt="Marvin Crepin">
                     <div class="card-body">
                         <h5 class="card-title">Marvin Crepin</h5>
                         <p class="card-text">Mail pro : marvincrepin@gmail.com <br>
@@ -394,8 +399,8 @@
 
             <div class="carousel-item">
                 <!-- card class de l'image du carousel -->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/Mauricia-min.JPG" class="card-img-top" alt="Rimie Mauricia Nkou">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/Mauricia-min.JPG" class="card-img-top" alt="Rimie Mauricia Nkou">
                     <div class="card-body">
                         <h5 class="card-title">Rimie Mauricia Nkou</h5>
                         <p class="card-text">Mail pro : rimie.nkou.20@neoma-bs.com <br>
@@ -406,8 +411,8 @@
 
             <div class="carousel-item">
                 <!-- card class de l'image du carousel -->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/Luis-min.JPG" class="card-img-top" alt="Luis Sousa">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/Luis-min.JPG" class="card-img-top" alt="Luis Sousa">
                     <div class="card-body">
                         <h5 class="card-title">Luis Sousa</h5>
                         <p class="card-text">Mail pro : luis.sousa89360@gmail.com <br>
@@ -419,8 +424,8 @@
 
             <div class="carousel-item">
                 <!-- card class de l'image du carousel -->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/Corentin-min.JPG" class="card-img-top" alt="Corentin Chalons">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/Corentin-min.JPG" class="card-img-top" alt="Corentin Chalons">
                     <div class="card-body">
                         <h5 class="card-title">Corentin Chalons</h5>
                         <p class="card-text">Mail Pro : chalons.corentin@gmail.com <br>
@@ -432,8 +437,8 @@
             <div class="carousel-item">
 
                 <!-- card avec class origin + img carousel -->
-                <div class="d-block w-100">
-                    <img src="asset/img/carousel/clement-1000_1500.png" class="card-img-top" alt="Clément Moreaux">
+                <div class="d-block h-25">
+                    <img src="assets/img/carousel/clement-1000_1500.png" class="card-img-top" alt="Clément Moreaux">
                     <div class="card-body">
                         <h5 class="card-title">Clément Moreaux</h5>
                         <p class="card-text">Mail pro : clement.moreaux.20@noema-bs.com <br>
@@ -449,7 +454,7 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-next" type="button" role="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -457,23 +462,9 @@
     </div>
     <!-- Fin test carousel + card -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="copyright-footer">
-            <p>Copyright 2021 Company,inc</p>
-        </div>
-        <div class="logo-footer">
-            <img class="../img/imagesquestionnairees.txt/size-img" src="https://ibb.co/j5FVnnz" alt="logo">
-        </div>
-        <div class="nav-footer">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="credits.html">Credits</a></li>
-                <!-- <li><a href="#">Partager</a></li> -->
-            </ul>
-        </div>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
