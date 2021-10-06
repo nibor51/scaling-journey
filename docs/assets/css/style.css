@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-color: #3537b9;
-    --secondary-color: #f79d26;
+    --main-color: #EDA51F;
+--secondary-color: #E40019;
+--third-color: #ECECEC; 
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -20,7 +21,6 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
 }
 
 /* *************** NAVBAR *************** */
@@ -48,7 +48,7 @@ body {
 /* *************** SURVEY *************** */
 
 .no-scroll {
-    background-color: pink;
+    background-color: whitesmoke;
 }
 
 /* .no-scroll>h1{background-color: red;}
@@ -63,16 +63,13 @@ body {
     height: 100vh;
 }
 
-label {
-    margin: 1rem;
-    filter: drop-shadow(0px 5px 2px black);
-}
+
 
 /* *************** RESULT *************** */
 
 .result {
     height: calc(93.5vh - 20vh);
-    background-color: pink;
+    background-color: whitesmoke;
 }
 
 /* *************** CREDITS *************** */
@@ -132,4 +129,26 @@ label {
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
+}
+
+input, label {
+   margin-bottom: 1rem;
+}
+
+.height {
+    height: 33%;
+}
+
+
+
+#bg-warning {
+    background-color: var(--main-color) !important;
+}
+
+.height {
+    height: 37%;
+}
+
+.heightqt {
+    width: 5;
 }

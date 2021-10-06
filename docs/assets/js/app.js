@@ -33,11 +33,13 @@ function resultOne(int) {
     for(let j = 0; j < radiosName.length; j++) {
       let radiosValue = radiosName[j];
       if(radiosValue.value == "correct" && radiosValue.checked) {
-        inner.innerHTML = "Lets go";
+        inner.innerHTML = "✅ Bien joué !";
         break;
       }
       else {
-         inner.innerHTML = "Dommage..";
+         inner.innerHTML = "❌ Dommage..";
       }
     }
   } 
+
+  

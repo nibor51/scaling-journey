@@ -16,7 +16,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-light bg-white sticky-top ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets\img\logo.jpg" alt="" width="40" height="30"
@@ -46,25 +46,24 @@
             <section id="q-one"
                 class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center">
 
-                <h1 class="question-title p-6 ">1 La Population de la Ville ? </h1>
-                <div class="debug btn-group-vertical">
-                    <div>
+                <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">La Population de la Ville ? </h1>
+                <div class=" btn-group-vertical height w-50">
+                    
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-secondary" for="Q1-a">125 000</label>
+                    <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
 
                         <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-secondary" for="Q1-b">150 000</label>
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">150 000</label>
 
-                    </div>
-                    <div>
+                   
                         <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class="btn btn-secondary" for="Q1-c">175 000</label>
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">175 000</label>
 
                         <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-secondary" for="Q1-d">185 000</label>
-                    </div>
-                    <a href="#a-one" onclick="resultOne(1)" class="btn btn-primary button-width mt-3">Réponse</a>
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
+                   
+                    <a href="#a-one" onclick="resultOne(1)" class="btn btn-warning shadow text-white heightqt mt-3">Réponse</a>
 
                 </div>
             </section>
@@ -80,7 +79,7 @@
                         la population reste pratiquement la même.
                         Reims est actuellement la 12 ème ville de France.</p>
                 </article>
-                <a href="#q-two" class="btn btn-primary button-width mt-3">Suivant</a>
+                <a href="#q-two" class="btn btn-outline-warning button-width mt-3">Suivant</a>
             </section>
         </div>
 
@@ -94,16 +93,16 @@
                 <div class="debug btn-group-vertical">
                     <div>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-a">
-                        <label class="btn btn-secondary" for="Q2-a">Rodium</label>
+                        <label class=" btn btn-outline-warning  " for="Q2-a">Rodium</label>
                         <input class="btn-check" type="radio" name="question2" value="correct" id="Q2-b">
-                        <label class="btn btn-secondary" for="Q2-b">Durocorturum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-b">Durocorturum</label>
                     </div>
 
                     <div>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-c">
-                        <label class="btn btn-secondary" for="Q2-c">Camaracum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-c">Camaracum</label>
                         <input class="btn-check" type="radio" name="question2" value="0" id="Q2-d">
-                        <label class="btn btn-secondary" for="Q2-d">Reimzorum</label>
+                        <label class="btn btn-outline-warning  " for="Q2-d">Reimzorum</label>
                     </div>
                     <a href="#a-two" onclick="resultOne(2)" class="btn btn-primary button-width mt-3">Réponse</a>
                 </div>
@@ -139,18 +138,18 @@
                 <div class="debug btn-group-vertical">
                     <div>
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
-                        <label class="btn btn-secondary" for="Q3-a">Porte de Paris</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-a">Porte de Paris</label>
 
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
-                        <label class="btn btn-secondary" for="Q3-b">Porte de Liberté</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-b">Porte de Liberté</label>
                     </div>
 
                     <div>
                         <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
-                        <label class="btn btn-secondary" for="Q3-c">Porte de Mars</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-c">Porte de Mars</label>
 
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
-                        <label class="btn btn-secondary" for="Q3-d">Porte de Vénus</label>
+                        <label class="btn btn btn btn-primary  " for="Q3-d">Porte de Vénus</label>
                     </div>
                     <a href="#a-three" class="btn btn-primary button-width mt-3">Réponse</a>
                 </div>
@@ -358,14 +357,15 @@
 
 
         <!-- START resultat -->
-        <section id="result" class="result d-flex justify-content-center align-items-center flex-column">
+
+      
+        <section id="result" class="result d-flex justify-content-center align-items-center vh-100  shadow-sm p-3 rounded flex-column">
             <h1>Résultat</h1>
             <p>Bravo tu as obtenu</p>
             <p id="resultat"></p>
             <p>bonnes réponses !</p>
-            <a href="https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveTwitter</a>
-            <br>
-            <div class="fb-share-button" data-href="https://nibor51.github.io/scaling-journey/docs/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnibor51.github.io%2Fscaling-journey%2Fdocs%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+            <div class="inline p-md-2">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=ReimsQuiz&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="true">ReimsQuiz</a>
         </section>
     </main>
     <!-- END resultat -->
