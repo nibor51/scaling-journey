@@ -82,7 +82,7 @@ label {
     }
     
     .carousel-item.active{
-    margin: auto;
+        margin: auto;
     }
 
     .carousel-control-prev, .carousel-control-next{
@@ -90,9 +90,9 @@ label {
     }
 
     #carousel{
-        background-color: #EDA51F
+        background-color: #EDA51F;
     }
-   
+    
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
 
