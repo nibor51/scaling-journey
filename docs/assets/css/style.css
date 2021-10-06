@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-color: #3537b9;
-    --secondary-color: #f79d26;
+    --main-color: #EDA51F;
+    --secondary-color: #E40019;
+    --third-color: #ECECEC;
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -60,12 +61,28 @@ body {
 }
 
 .no-scroll {
-    height: 100vh;
+    height: 93.5vh;
 }
 
 label {
     margin: 1rem;
     filter: drop-shadow(0px 5px 2px black);
+}
+
+.answer-title {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+.toKnow {
+    padding: 1.5rem 3rem ;
+}
+.answer > img {
+    width: 200px ;
+    height: 300px ;
+}
+.answer {
+    background-color: var(--third-color);
+    
 }
 
 /* *************** RESULT *************** */
