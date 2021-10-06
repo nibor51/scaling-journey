@@ -22,10 +22,11 @@ function getResults() {
   amountCorrect;
   }
 
-function resultOne() {   
+
+function resultOne(int) {   
 
     let inner = document.getElementById("resultatyes");
-    let radiosName = document.getElementsByName('question2');
+    let radiosName = document.getElementsByName('question'+int);
 
 // Boucles pour regarder les réponses
 
@@ -39,5 +40,4 @@ function resultOne() {
          inner.innerHTML = "Dommage..";
       }
     }
-    
   } 
