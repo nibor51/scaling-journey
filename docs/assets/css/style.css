@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-color: #3537b9;
-    --secondary-color: #f79d26;
+    --main-color: #EDA51F;
+    --secondary-color: #E40019;
+    --third-color: #ECECEC;
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -23,7 +24,13 @@ body {
     overflow: hidden;
 }
 
+
+
 /* *************** NAVBAR *************** */
+
+#color-nav{
+    background-color: var(--main-color);
+}
 
 /* *************** MAIN / ACCUEIL *************** */
 
@@ -43,6 +50,10 @@ body {
     width: 15rem;
     background-color: #EE2122;
     border: white 1px;
+}
+
+.btn-nav{
+    display: flex;
 }
 
 /* *************** SURVEY *************** */
