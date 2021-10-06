@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #3537b9;
+    --secondary-color: #f79d26;
+    --light: rgba(250, 245, 242, 0.938);
+    --dark: #14030d;
+    --spacing: 8px;
+    --spacing-2: calc(var(--spacing) * 2);
+    --spacing-4: calc(var(--spacing) * 4);
+    --main-font: arial;
+    --title-font: impact;
+    --text-font-size: 16pt;
+    --title-font-size: 24pt;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -33,10 +47,12 @@ body {
 
 /* *************** SURVEY *************** */
 
-.no-scroll{background-color:pink;}
+.no-scroll {
+    background-color: pink;
+}
+
 /* .no-scroll>h1{background-color: red;}
 .debug{background-color: blue;} */
-
 
 .question-title {
     font-size: 2rem;
@@ -51,6 +67,7 @@ label {
     margin: 1rem;
     filter: drop-shadow(0px 5px 2px black);
 }
+
 /* *************** RESULT *************** */
 
 .result {
@@ -58,95 +75,60 @@ label {
     background-color: pink;
 }
 
-/* *************** FOOTER *************** */
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
-    background-color: lightslategray;
-}
-.nav-footer ul {
-    display: inline;
-    list-style-type: none;
-}
-.nav-footer ul li {
-    list-style-type: none;
-    padding: 1rem;
-}
-
-.nav-footer ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.size-img {
-    width: 50px;
-    height: 50px;
-}
-
 /* *************** CREDITS *************** */
 
- .card-img-top {
+.card-img-top {
     margin: 10%;
     width: 80%;
-
 }
 
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
 
-@media screen and (min-width: 800px) {
+/* Small devices (landscape phones, 576px and up)  */
 
-     /* *************** NAVBAR *************** */
+@media (min-width: 576px) {
+    /* *************** NAVBAR *************** */
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
-    /* *************** FOOTER *************** */
-   
-   
-
-    .footer {
-        align-items: center;
-        border-top: 1px solid black;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    
-    .nav-footer ul li {
-        padding: 10px;
-    }
-    
-    .nav-footer ul {
-        display: flex;
-        flex-direction: row;
-    }
-}
     /* *************** CREDITS *************** */
-.shadows {
-    padding: 1rem;
-  
+    .shadows {
+        padding: 1rem;
+    }
 }
 
-/* h2, p {
-    text-align: center;
-    padding: 0.5rem;
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* *************** NAVBAR *************** */
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
 }
 
-h1 {line-height: 1.25; font-size: 30px; font-weight: bold; color:brown; text-align: center;    filter: drop-shadow(0px 1px 2px black);
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    /* *************** NAVBAR *************** */
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
 }
 
-.shadow {
+/* X-Large devices (large desktops, 1200px and up) */
 
-    filter: drop-shadow(0px 5px 2px black);
-
+@media (min-width: 1200px) {
+    /* *************** NAVBAR *************** */
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
 }
 
-section img {
-    margin-bottom: 2rem;
-    width: 33vh;
-    height: 33vh;
-    filter: drop-shadow(0px 5px 2px black);
+/* XX-Large devices (larger desktops, 1400px and up) */
 
-} */
-
-
-
+@media (min-width: 1400px) {
+    /* *************** NAVBAR *************** */
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
+}
