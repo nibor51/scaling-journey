@@ -84,6 +84,7 @@ body {
     border-radius: 0;
 }
 
+
 .card, .card-body {
     background-color: var(--third-color);
 }
@@ -92,6 +93,10 @@ body {
     color: black;
     margin-top: 2em;
     margin-bottom: 2em;
+.button-width {
+    width: 15rem;
+    background-color: var(--secondary-color);
+    border: white 1px;
 }
 
 /* *************** SURVEY *************** */
@@ -99,6 +104,19 @@ body {
 .no-scroll {
     background-color: pink;
 }
+
+.contenant {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+.texte_centrer {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 /* .no-scroll>h1{background-color: red;}
 .debug{background-color: blue;} */
@@ -121,7 +139,7 @@ label {
 
 .result {
     height: calc(93.5vh - 20vh);
-    background-color: pink;
+    background-color: var(--third-color);
 }
 
 /* *************** CREDITS *************** */
