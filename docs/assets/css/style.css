@@ -4,8 +4,9 @@
 }
 
 :root {
-    --main-color: #3537b9;
-    --secondary-color: #f79d26;
+    --main-color: #EDA51F;
+    --secondary-color: #E40019;
+    --third-color: #ECECEC;
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -41,7 +42,7 @@ body {
 
 .button-width {
     width: 15rem;
-    background-color: #EE2122;
+    background-color: var(--secondary-color);
     border: white 1px;
 }
 
@@ -50,6 +51,19 @@ body {
 .no-scroll {
     background-color: pink;
 }
+
+.contenant {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+.texte_centrer {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 /* .no-scroll>h1{background-color: red;}
 .debug{background-color: blue;} */
@@ -72,7 +86,7 @@ label {
 
 .result {
     height: calc(93.5vh - 20vh);
-    background-color: pink;
+    background-color: var(--third-color);
 }
 
 /* *************** CREDITS *************** */
