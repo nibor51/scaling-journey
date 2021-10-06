@@ -25,7 +25,7 @@ function getResults() {
 
 function resultOne(int) {   
 
-    let inner = document.getElementById("resultatyes");
+    let inner = document.getElementById("resultat"+int);
     let radiosName = document.getElementsByName('question'+int);
 
 // Boucles pour regarder les réponses
