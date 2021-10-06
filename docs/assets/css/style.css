@@ -63,8 +63,21 @@ body {
     height: 100vh;
 }
 
+.card, .card-body {
+    background-color: var(--third-color);
+}
 
+.card-body {
+    color:black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
+.button-width {
+    width: 15rem;
+    background-color: var(--secondary-color);
+    border: white 1px;
+}
 /* *************** RESULT *************** */
 
 .result {
@@ -144,4 +157,5 @@ input, label {
 #bg-warning {
     background-color: var(--main-color) !important;
 }
+
 
