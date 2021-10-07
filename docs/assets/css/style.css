@@ -21,7 +21,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 /* *************** NAVBAR *************** */
@@ -98,8 +98,24 @@ body {
 /* *************** CREDITS *************** */
 
 .card-img-top {
-    margin: 10%;
-    width: 80%;
+    margin-left: 30%;
+    width: auto;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.carousel-control-prev .carousel-control-next{
+    visibility: hidden;
+}
+
+.d-block .card-img-top{
+    height: 85vh;
+}
+
+.d-block .card-body{
+    height: 15vh;
 }
 
 /* X-Small devices (portrait phones, less than 576px)
@@ -155,8 +171,22 @@ body {
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
-}
+    
+    .card-img-top{
+        width: auto;
+        margin: 0;
+        padding-left: 35%;
+    }
 
+    div .card-body{
+        margin: 0;
+    }
+
+    .carousel-control-prev .carousel-control-next{
+        visibility: visible;
+    }
+
+}
 /* XX-Large devices (larger desktops, 1400px and up) */
 
 @media (min-width: 1400px) {
