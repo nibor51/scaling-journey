@@ -21,6 +21,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* *************** NAVBAR *************** */
@@ -28,7 +29,7 @@ body {
 /* *************** MAIN / ACCUEIL *************** */
 
 .card-index {
-    height: 93.5vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,4 +159,32 @@ input, label {
     background-color: var(--main-color) !important;
 }
 
+#bg-test {
+    background-color: #006393 !important;
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #006393 !important;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  
+.margintop {
+    margin-top: 0.8rem;
+}
 
+.red {
+    color: #FF8484;
+}
+
+.green {
+    color:#1A936F;
+}
+
+.blue {
+    background-color: #006393 !important;
+
+}

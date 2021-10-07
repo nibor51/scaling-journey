@@ -15,7 +15,7 @@
 <body>
 
     <!-- navbar -->
-    <nav id="color-nav" class="navbar sticky-top">
+    <nav id="bg-warning" class="navbar sticky-top">
         <div class="container-fluid" id="contain">
             <a class="navbar-brand" id="size-navbar-brand" href="#">
                 <img src="assets\img\logo.jpg" alt="" width="40" height="30"
@@ -23,11 +23,11 @@
     
 
                     class="d-inline-block align-text-top">
-               <span class="style-titre mt-3">Reims Quiz</span> 
+               <span class=" fw-bold text-white mt-3 ">Reims Quiz</span> 
             </a>
             <div class="btn-nav">
-                <a href="#" class="btn1 btn btn-home">Retour</a>
-                <a href="#carousel" class="btn2 btn btn-home">Crédits</a>
+                <a href="#" class="btn1 btn btn-light text-black-50 shadow">Retour</a>
+                <a href="#carousel" class="btn2 btn btn-light text-black-50 shadow">Crédits</a>
             </div>
         </div>
     </nav>
@@ -35,10 +35,10 @@
     <!-- main accueil -->
     <div class="card card-index">
         <div class="card-body card-index">
-            <h2 class="card-title">Reims Quiz</h2>
+            <h2 class="btn-warning text-black-50 fw-bold" id="">Reims Quiz</h2>
             <p>Bienvenue sur ce questionnaire à propos de la ville de Reims</p>
             <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
-            <a href="#q-one" class="btn btn3 btn-home btn-primary button-width">Play</a>
+            <a href="#q-one" onclick="resultOne(1)" class="btn blue text-white w-75 fw-bolder">Play</a>
         </div>
     </div>
     <!-- END MAIN -->
@@ -50,10 +50,13 @@
         <div>
             <section id="q-one"
                 class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
-
+                <div class="">
+                <div class="dot bg shadow mt-2 fw-bold">
+                    <p class="margintop" id="questionnumber1"></p>
+                </div>
+                 </div>
                 <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">La Population de la Ville ? </h1>
                 <div class=" btn-group-vertical height w-50">
-
                     <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
                     <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
 
@@ -67,7 +70,7 @@
                         <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
                         <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
                    
-                    <a href="#a-one" onclick="resultOne(1)" class="btn btn-warning shadow text-white heightqt mt-3">Réponse</a>
+                    <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                 </div>
             </section>
@@ -78,19 +81,49 @@
             <section id="a-one"
                 class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
-                <div  class="answer-title">
+                <div id="bg-test"  class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                    <br>
                 <p id="resultat1" class=></p>
                     
                     <p>La bonne réponse est :</p>
-                    <h1 class="bg-warning mb-3">185 000 !</h1>
-                </div>
-                <p class="toKnow w-75 text-break  shadow  border-light  ">
-                    C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette forte croissance est dû à je sais pas quoi. Après cette période la population resta pratiquement la même, et n'augmenta que de 5 000 habitants en une cinquantaine d'années.
+                    <h1 class="mb-3 fst-italic">185 000 !</h1>
+                <p class="toKnow w-75 text-break m-auto shadow  border-light  ">
+                    C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette forte croissance est dû à je sais pas quoi.
                 </p>
+                <br>
+            </div>
                 <img class="shadow" src="https://picsum.photos/seed/picsum/200/300" alt="">
-                <a href="#result" onclick="getResults()" class="btn btn-primary button-width mt-3 shadow">Suivant</a>
+                <a href="#q-two" onclick="resultOne(2)"  id="bg-warning" class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
             </section>
         </div>
+        <div>
+            <section id="q-two"
+                class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="dot bg shadow mt-2 fw-bold">
+                    <p class="margintop" id="questionnumber2"></p>
+                </div>
+                <h1 id="bg-warning" class="question-title p-4 bg-warning border  w-75  text-white shadow">Comment se nomme cette porte ? </h1>
+                <img class="shadow pt-2" src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" width="250px" height="250px" >
+
+                <div class="debug btn-group-vertical pt-4 ">
+                    <div>
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-a">Porte de Paris</label>
+
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-b">Porte de Terre</label>
+                    </div>
+
+                    <div>
+                        <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-c">Porte de Mars</label>
+
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-d">Porte de Sack</label>
+                    </div>
+                    <a href="#a-two" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                </div>
+            </section>
 
        
         
