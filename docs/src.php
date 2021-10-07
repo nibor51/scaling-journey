@@ -1,8 +1,8 @@
 
 <?php
-$survey = [
+$surveys = [
     [
-        "question" => "1- Combien y a-t-il d'habitant dans la cité des sacres ?",
+        "question" => "Combien y a-t-il d'habitant dans la cité des sacres ?",
         "answerOne" => "125 000",
         "answerTwo" => "150 000",
         "answerThree" => "175 000",
@@ -12,7 +12,7 @@ $survey = [
         "toKnow" => "C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette forte croissance est dû à je sais pas quoi. Après cette période la population resta pratiquement la même, et n'augmenta que de 5 000 habitants en une cinquantaine d'années.",
     ],
     [
-        "question" => "2- Quel était le nom de la ville de Reims à l'époque Gallo Romaine ?",
+        "question" => "Quel était le nom de la ville de Reims à l'époque Gallo Romaine ?",
         "answerOne" => "Rodium",
         "answerTwo" => "Durocortorum",
         "answerThree" => "Camaracum",
@@ -24,7 +24,7 @@ $survey = [
         À son apogée, avec ses 30 000 habitants, la cité gallo-romaine était devenue l’une des plus peuplées au nord des Alpes.",
     ],
     [
-        "question" => "3- Comment se nomme cette grande Porte ?",
+        "question" => "Comment se nomme cette grande Porte ?",
         "answerOne" => "Porte de Paris",
         "answerTwo" => "Porte la Liberté",
         "answerThree" => "Porte de Mars",
@@ -35,7 +35,7 @@ $survey = [
         visible aujourd'hui. Elle a été construite au 3 ème siècle.",
     ],
     [
-        "question" => "4- Quand est-ce que la première pierre de la cathédrale de Reims fut posée ?",
+        "question" => "Quand est-ce que la première pierre de la cathédrale de Reims fut posée ?",
         "answerOne" => "956",
         "answerTwo" => "1001",
         "answerThree" => "1212",
@@ -48,7 +48,7 @@ $survey = [
         une charpente en béton armé élaborée par l'architecte Henri Deneux, ainsi qu'un riche ensemble de vitraux contemporains dont certains contemporains dessinés par Marc Chagall (1974) et Imi Knoebel (2011 et 2015).",
     ],
     [
-        "question" => "5- Combien de roi de France ont été sacré à la catédrale de Reims ?",
+        "question" => "Combien de roi de France ont été sacré à la catédrale de Reims ?",
         "answerOne" => "4",
         "answerTwo" => "8",
         "answerThree" => "23",
@@ -58,7 +58,7 @@ $survey = [
         "toKnow" => "À partir du XIe siècle, presque tous les rois de France se sont fait sacrer à Reims, jusqu’à Charles X en 1825.",
     ],
     [
-        "question" => "6- Comment se nomme cette grande place ?",
+        "question" => "Comment se nomme cette grande place ?",
         "answerOne" => "Place Drouet d'Erlon",
         "answerTwo" => "Place Ducale",
         "answerThree" => "Place Royale",
@@ -69,7 +69,7 @@ $survey = [
         Avec ses 20.000 m2, les terrasses, au fil du temps s'y sont multipliées. Elles y occupent aujourd'hui 3.710 m2, ce qui en fait en quelque sorte, la plus grande terrasse de France.",
     ],
     [
-        "question" => "7- Où ont été signés les actes de capitulation du Troisième Reich à Reims ?",
+        "question" => "Où ont été signés les actes de capitulation du Troisième Reich à Reims ?",
         "answerOne" => "Sur le canal de la Marne",
         "answerTwo" => "Devant la cathédrale de Reims",
         "answerThree" => "Dans la mairie de reims",
@@ -79,7 +79,7 @@ $survey = [
         "toKnow" => "Vous pouvez vous rendre au musée de la Reddition situé dans une partie des locaux du lycée Franklin-Roosevelt à Reims où eut lieu ce tournant de l'histoire",
     ],
     [
-        "question" => "8- Quel est le nom de cette statue ?",
+        "question" => "Quel est le nom de cette statue ?",
         "answerOne" => "L'ange au sourire",
         "answerTwo" => "L'ange gardien",
         "answerThree" => "l'ange souriant",
@@ -90,7 +90,7 @@ $survey = [
         Il porte depuis le nom d’Ange au sourire. ",
     ],
     [
-        "question" => "9- Comment appelle-t-on les habitants de Reims ?",
+        "question" => "Comment appelle-t-on les habitants de Reims ?",
         "answerOne" => "Les reimsois",
         "answerTwo" => "Les rémois",
         "answerThree" => "Les rétiriens",
@@ -163,57 +163,55 @@ $survey = [
 <!-- survey -->
 <main class="survey">
 
-    <!-- Question one -->
-    <div>
-        <section id="q-one"
-            class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+        <?php foreach($surveys as $survey): ?>
+        <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
-            <div class="dot bg shadow mt-2 fw-bold">
-                <p class="margintop" id="questionnumber1"></p>
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow"><?= $survey["question"] ?></h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a"><?= $survey["answerOne"] ?></label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b"><?= $survey["answerTwo"] ?></label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c"><?= $survey["answerThree"] ?></label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d"><?= $survey["answerFour"] ?></label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic"><?= $survey["trueAnswer"] ?> !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  "><?= $survey["toKnow"] ?>
+                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="<?= $survey["img"]["scr"] ?>" alt="<?= $survey["img"]["alt"] ?>">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
             </div>
-
-            <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">La Population
-                de la Ville ? </h1>
-            <div class=" btn-group-vertical height w-50">
-                <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
-
-                <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">150 000</label>
-
-
-                <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">175 000</label>
-
-                <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
-
-                <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
-
-            </div>
-        </section>
-
-        <section id="a-one"
-            class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
-
-            <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
-                <br>
-                <p id="resultat1" class=></p>
-
-                <p>La bonne réponse est :</p>
-                <h1 class="mb-3 fst-italic">185 000 !</h1>
-                <p class="toKnow w-75 text-break m-auto shadow  border-light  ">
-                    C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette forte
-                    croissance est dû à je sais pas quoi.
-                </p>
-                <br>
-            </div>
-            <img class="shadow" src="https://picsum.photos/seed/picsum/200/300" alt="">
-            <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
-                class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
-        </section>
-    </div>
-    
+        <?php endforeach; ?>    
     <div>
         <section id="q-two"
             class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
