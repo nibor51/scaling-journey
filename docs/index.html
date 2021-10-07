@@ -35,10 +35,10 @@
     <!-- main accueil -->
     <div class="card card-index">
         <div class="card-body card-index">
-            <h2 class="card-title border border-warning" id="bg-warning">Reims Quiz</h2>
+            <h2 class="btn-warning text-white fw-bold" id="">Reims Quiz</h2>
             <p>Bienvenue sur ce questionnaire à propos de la ville de Reims</p>
             <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
-            <a href="#q-one" onclick="resultOne(1)" class="btn btn3 btn-home btn-primary button-width">Play</a>
+            <a href="#q-one" onclick="resultOne(1)" class="btn blue text-white w-75 fw-bolder">Play</a>
         </div>
     </div>
     <!-- END MAIN -->
@@ -70,7 +70,7 @@
                         <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
                         <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
                    
-                    <a href="#a-one" onclick="resultOne(1)" class="btn btn-warning shadow text-white heightqt mt-3">Réponse</a>
+                    <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                 </div>
             </section>
@@ -93,17 +93,19 @@
                 <br>
             </div>
                 <img class="shadow" src="https://picsum.photos/seed/picsum/200/300" alt="">
-                <a href="#q-two" onclick="getResults()"  id="bg-warning" class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                <a href="#q-two" onclick="resultOne(2)"  id="bg-warning" class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
             </section>
         </div>
         <div>
             <section id="q-two"
                 class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="dot bg shadow mt-2 fw-bold">
+                    <p class="margintop" id="questionnumber2"></p>
+                </div>
+                <h1 id="bg-warning" class="question-title p-4 bg-warning border  w-75  text-white shadow">Comment se nomme cette porte ? </h1>
+                <img class="shadow pt-2" src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" width="250px" height="250px" >
 
-                <h1 id="bg-warning" class="question-title p-6 bg-warning border mb-5 text-white shadow">Comment se nomme cette porte ? </h1>
-                <img class="shadow p-lg-3" src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" width="250px" height="250px" >
-
-                <div class="debug btn-group-vertical pt-3">
+                <div class="debug btn-group-vertical pt-4 ">
                     <div>
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
                         <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-a">Porte de Paris</label>
@@ -119,7 +121,7 @@
                         <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
                         <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-d">Porte de Sack</label>
                     </div>
-                    <a href="#a-three" class="btn btn-primary button-width mt-3">Réponse</a>
+                    <a href="#a-two" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
                 </div>
             </section>
 
