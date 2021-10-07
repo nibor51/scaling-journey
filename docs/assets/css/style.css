@@ -5,8 +5,8 @@
 
 :root {
     --main-color: #EDA51F;
---secondary-color: #E40019;
---third-color: #ECECEC; 
+    --secondary-color: #E40019;
+    --third-color: #FFF; 
     --light: rgba(250, 245, 242, 0.938);
     --dark: #14030d;
     --spacing: 8px;
@@ -26,7 +26,16 @@ body {
 
 /* *************** NAVBAR *************** */
 
+
+.btn-hover:hover {
+    color: var(--main-color);
+}
+
 /* *************** MAIN / ACCUEIL *************** */
+
+.d-flex {
+    display: flex;
+}
 
 .card-index {
     height: 100vh;
@@ -100,6 +109,7 @@ body {
 
 @media (min-width: 576px) {
     /* *************** NAVBAR *************** */
+    
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
 
@@ -113,6 +123,9 @@ body {
 
 @media (min-width: 768px) {
     /* *************** NAVBAR *************** */
+    .hand-border {
+        border: 1px solid var(--main-color);
+    }
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -122,6 +135,10 @@ body {
 
 @media (min-width: 992px) {
     /* *************** NAVBAR *************** */
+    .hand-border {
+        padding: 10rem;
+    }
+   
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
@@ -131,6 +148,10 @@ body {
 
 @media (min-width: 1200px) {
     /* *************** NAVBAR *************** */
+    .hand-border {
+        padding: 15rem;
+    }
+    
     /* *************** MAIN / ACCUEIL *************** */
     /* *************** SURVEY *************** */
     /* *************** CREDITS *************** */
