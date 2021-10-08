@@ -98,11 +98,11 @@ body {
 /* *************** CREDITS *************** */
 
 .card-img-top {
-    margin-left: 30%;
-    width: auto;
+    max-width: 100vw;
+
 }
 
-.card-body{
+.carousel-item{
     text-align: center;
 }
 
@@ -175,7 +175,6 @@ body {
     .card-img-top{
         width: auto;
         margin: 0;
-        padding-left: 35%;
     }
 
     div .card-body{
