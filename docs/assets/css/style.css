@@ -21,7 +21,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 /* *************** NAVBAR *************** */
@@ -123,6 +123,7 @@ body {
 .carousel-item {
     height: 80%;
     text-align: center;
+    margin-top: 6.5vh;
 }
 .card-img-top {
     max-height: 75vh;
