@@ -99,16 +99,12 @@ body {
 
 .card-img-top {
     max-width: 100vw;
-
 }
 
 .carousel-item{
     text-align: center;
 }
 
-.carousel-control-prev .carousel-control-next{
-    visibility: hidden;
-}
 
 .d-block .card-img-top{
     height: 85vh;
@@ -116,7 +112,23 @@ body {
 
 .d-block .card-body{
     height: 15vh;
+} */
+
+.carousel-control-prev .carousel-control-next {
+    display: hidden;
 }
+#carousel {
+    height: 100vh;
+}
+.carousel-item {
+    height: 80%;
+    text-align: center;
+}
+.card-img-top {
+    max-height: 75vh;
+    width: auto;
+}
+
 
 /* X-Small devices (portrait phones, less than 576px)
  No media query for `xs` since this is the default in Bootstrap */
