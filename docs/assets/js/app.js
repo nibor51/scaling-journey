@@ -5,7 +5,7 @@ function getResults() {
   let result = 0;
 
 // Boucle pour aller dans chaque questions
-  for(let i = 0; i <= 4; i++) {
+  for(let i = 0; i <= 11; i++) {
     let radiosName = document.getElementsByName('question'+i);
 
 // Boucles pour regarder les réponses
