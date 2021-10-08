@@ -239,3 +239,8 @@ input, label {
     background-color: #006393 !important;
 
 }
+
+section img {
+    width: 200px;
+    height: 200px;
+}

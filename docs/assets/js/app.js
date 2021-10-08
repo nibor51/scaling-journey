@@ -24,7 +24,8 @@ amountCorrect;
 
 
 function resultOne(int) {   
-
+  document.getElementById("questionnumber"+ int).innerHTML = int + "/10";
+  console.log();
   let inner = document.getElementById("resultat"+int);
   let radiosName = document.getElementsByName('question'+int);
 // Boucles pour regarder les réponses
@@ -41,7 +42,6 @@ function resultOne(int) {
        inner.classList.add('red')
     }
   }
-  document.getElementById("questionnumber"+ int).innerHTML = int + "/5";
 
 } 
 
