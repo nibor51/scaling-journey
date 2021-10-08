@@ -72,11 +72,11 @@ body {
 }
 
 .no-scroll {
-    height: 85vh;
+    height: 90vh;
     margin-top: 6.5vh;
 }
 .vh-100 {
-    height: 85vh!important;
+    height: 90vh!important;
 }
 
 .card, .card-body {
@@ -113,7 +113,7 @@ body {
 
 
 .d-block .card-img-top{
-    height: 75vh;
+    height: 85vh;
 }
 
 .d-block .card-body{
@@ -124,7 +124,7 @@ body {
     visibility: hidden;
 }
 #carousel {
-    height: 85vh;
+    height: 100vh;
 }
 .carousel-item {
     height: 80%;
@@ -132,7 +132,7 @@ body {
     margin-top: 6.5vh;
 }
 .card-img-top {
-    max-height: 70vh;
+    max-height: 75vh;
     width: auto;
 }
 
