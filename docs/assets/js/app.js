@@ -24,7 +24,7 @@ amountCorrect;
 
 
 function resultOne(int) {   
-  document.getElementById("questionnumber"+ int).innerHTML = int + "/10";
+  document.getElementById("questionnumber"+ int).innerHTML = int + "/9";
   console.log();
   let inner = document.getElementById("resultat"+int);
   let radiosName = document.getElementsByName('question'+int);
