@@ -5,7 +5,7 @@ function getResults() {
   let result = 0;
 
 // Boucle pour aller dans chaque questions
-  for(let i = 0; i <= 4; i++) {
+  for(let i = 0; i <= 11; i++) {
     let radiosName = document.getElementsByName('question'+i);
 
 // Boucles pour regarder les réponses
@@ -24,7 +24,8 @@ amountCorrect;
 
 
 function resultOne(int) {   
-
+  document.getElementById("questionnumber"+ int).innerHTML = int + "/8";
+  console.log();
   let inner = document.getElementById("resultat"+int);
   let radiosName = document.getElementsByName('question'+int);
 // Boucles pour regarder les réponses
@@ -41,7 +42,6 @@ function resultOne(int) {
        inner.classList.add('red')
     }
   }
-  document.getElementById("questionnumber"+ int).innerHTML = int + "/5";
 
 } 
 

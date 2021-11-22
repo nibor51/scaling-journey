@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/img/favicon/" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="docs/assets/css/style.css">
     <title>Reims Quiz</title>
 </head>
 
@@ -97,39 +97,39 @@
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-two"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber2"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel était le nom de la ville de Reims à l'époque Gallo Romaine ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Rodium</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q2-a">Rodium</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Durocortorum</label>
+                        <input class="btn-check" type="radio" name="question2" value="correct" id="Q2-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q2-b">Durocortorum</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Camaracum</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q2-c">Camaracum</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Reimzorum</label>
+                        <input class="btn-check" type="radio" name="question2" value="0" id="Q2-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q2-d">Reimzorum</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-two" onclick="resultOne(2)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-two"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat2" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Durocortorum !</h1>
@@ -139,45 +139,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://www.reims.fr/fileadmin/_processed_/c/3/csm_Plan_gallo-romain_de_Reims__Durocortorum__738964cb9d.jpg" alt="Durocortorum reconstitution">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-three" id="bg-warning" onclick="resultOne(3)"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-three"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber3"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment se nomme cette grande Porte ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Porte de Paris</label>
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q3-a">Porte de Paris</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Porte la Liberté</label>
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q3-b">Porte la Liberté</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Porte de Mars</label>
+                        <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q3-c">Porte de Mars</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Porte de Vénus</label>
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q3-d">Porte de Vénus</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-three" onclick="resultOne(3)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-three"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat3" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Porte de Mars !</h1>
@@ -186,45 +186,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="ttps://upload.wikimedia.org/wikipedia/commons/9/98/Porte_Mars_01.jpg" alt="Porte de Mars">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-four" onclick="resultOne(4)" id="bg-warning"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-four"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber4"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quand est-ce que la première pierre de la cathédrale de Reims fut posée ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">956</label>
+                        <input class="btn-check" type="radio" name="question4" value="0" id="Q4-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q4-a">956</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">1001</label>
+                        <input class="btn-check" type="radio" name="question4" value="0" id="Q4-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q4-b">1001</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">1212</label>
+                        <input class="btn-check" type="radio" name="question4" value="correct" id="Q4-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q4-c">1212</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">1384</label>
+                        <input class="btn-check" type="radio" name="question4" value="0" id="Q4-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q4-d">1384</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-four" onclick="resultOne(4)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-four"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat4" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">1212 !</h1>
@@ -235,45 +235,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://images.france.fr/zeaejvyq9bhj/3I6KpOJXfaq4GGAOgEoEOK/2085fcaae0d9d1c78d491c6852132057/cathedrale_notre-dame_de_reims-r_christian_lantenois.jpg" alt="Cathédrale de Reims">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-five" onclick="resultOne(5)" id="bg-warning"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-five"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber5"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Combien de roi de France ont été sacré à la catédrale de Reims ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">4</label>
+                        <input class="btn-check" type="radio" name="question5" value="0" id="Q5-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q5-a">4</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">8</label>
+                        <input class="btn-check" type="radio" name="question5" value="0" id="Q5-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q5-b">8</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">23</label>
+                        <input class="btn-check" type="radio" name="question5" value="0" id="Q5-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q5-c">23</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">31</label>
+                        <input class="btn-check" type="radio" name="question5" value="correct" id="Q5-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q5-d">31</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-five" onclick="resultOne(5)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-five"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat5" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">31 !</h1>
@@ -281,45 +281,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/80e40d42-a209-4cfd-8784-49989fc37b96/870x489_louis_xv_sacre.jpg" alt="Sacrement">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-six" onclick="resultOne(6)" id="bg-warning"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-six"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber6"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment se nomme cette grande place ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Place Drouet d'Erlon</label>
+                        <input class="btn-check" type="radio" name="question6" value="0" id="Q6-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q6-a">Place Drouet d'Erlon</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Place Ducale</label>
+                        <input class="btn-check" type="radio" name="question6" value="0" id="Q6-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q6-b">Place Ducale</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Place Royale</label>
+                        <input class="btn-check" type="radio" name="question6" value="0" id="Q6-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q6-c">Place Royale</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Place du Forum</label>
+                        <input class="btn-check" type="radio" name="question6" value="correct" id="Q6-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q6-d">Place du Forum</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-six" onclick="resultOne(6)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-six"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat6" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Place Drouet d'Erlon !</h1>
@@ -328,45 +328,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" alt="Place d'Erlon">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-seven" onclick="resultOne(7)"  id="bg-warning"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-seven"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber7"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Où ont été signés les actes de capitulation du Troisième Reich à Reims ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Sur le canal de la Marne</label>
+                        <input class="btn-check" type="radio" name="question7" value="0" id="Q7-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q7-a">Sur le canal de la Marne</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Devant la cathédrale de Reims</label>
+                        <input class="btn-check" type="radio" name="question7" value="0" id="Q7-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q7-b">Devant la cathédrale de Reims</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Dans la mairie de reims</label>
+                        <input class="btn-check" type="radio" name="question7" value="0" id="Q7-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q7-c">Dans la mairie de reims</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Dans une salle du collège technique de Reims</label>
+                        <input class="btn-check" type="radio" name="question7" value="correct" id="Q7-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q7-d">Dans une salle du collège technique de Reims</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-seven" onclick="resultOne(7)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-seven"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat7" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Dans une salle du collège technique de Reims !</h1>
@@ -374,45 +374,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://cdt51.media.tourinsoft.eu/upload/Reddition-01-cyrille-beudot.jpg" alt="Musée de la Rédition">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-eight" onclick="resultOne(8)"  id="bg-warning"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-eight"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber8"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel est le nom de cette statue ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">L'ange au sourire</label>
+                        <input class="btn-check" type="radio" name="question8" value="0" id="Q8-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q8-a">L'ange au sourire</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">L'ange gardien</label>
+                        <input class="btn-check" type="radio" name="question8" value="0" id="Q8-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q8-b">L'ange gardien</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">l'ange souriant</label>
+                        <input class="btn-check" type="radio" name="question8" value="0" id="Q8-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q8-c">l'ange souriant</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">L'ange de la cathédrale</label>
+                        <input class="btn-check" type="radio" name="question8" value="correct" id="Q8-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q8-d">L'ange de la cathédrale</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-eight" onclick="resultOne(8)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-eight"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat8" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">L'ange au sourire !</h1>
@@ -421,45 +421,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://lh3.googleusercontent.com/proxy/yfvWr1XNMqBKY3Eg7fWeaXHAPcLAWu3BtFTL9Q8ybVRe56aCEUj5SwX3JwkSIBOdznjY-R5vpre1GEP7muhOr3aoIjT9wvKe7RFZhOmur-PGwzu6lioKLP3a5MoXs4gjO6Ai" alt="ange au sourire">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-nine"  id="bg-warning" onclick="resultOne(9)"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-nine"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber9"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment appelle-t-on les habitants de Reims ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Les reimsois</label>
+                        <input class="btn-check" type="radio" name="question9" value="0" id="Q9-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q9-a">Les reimsois</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Les rémois</label>
+                        <input class="btn-check" type="radio" name="question9" value="0" id="Q9-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q9-b">Les rémois</label>
 
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Les rétiriens</label>
+                        <input class="btn-check" type="radio" name="question9" value="0" id="Q9-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q9-c">Les rétiriens</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Les rémolois</label>
+                        <input class="btn-check" type="radio" name="question9" value="correct" id="Q9-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q9-d">Les rémolois</label>
 
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-nine" onclick="resultOne(9)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-nine"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat9" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Les rémois !</h1>
@@ -467,45 +467,45 @@
                         <br>
                     </div>
                     <img class="shadow" src="https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2020/11/15/node_207133/12160044/public/2020/11/15/B9725250910Z.1_20201115172708_000%2BGSDH2KQTJ.1-0.jpg?itok=2GBNMEpP1605462660" alt="Reims en big lettres">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#q-ten"  id="bg-warning" onclick="resultOne(10)"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
                 <!-- Question one -->
             <div>
-                <section id="q-one"
+                <section id="q-ten"
                     class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
 
                     <div class="dot bg shadow mt-2 fw-bold">
-                        <p class="margintop" id="questionnumber1"></p>
+                        <p class="margintop" id="questionnumber10"></p>
                     </div>
 
                     <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel est la première maison de Champagne de Reims ?</h1>
                     <div class=" btn-group-vertical height w-50">
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Champagne Mum</label>
+                        
+                        <input class="btn-check" type="radio" name="question9" value="0" id="Q9-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q9-a">Les reimsois</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Champagne Pommery</label>
+                        <input class="btn-check" type="radio" name="question10" value="0" id="Q10-b"><input>
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q10-b">Champagne Pommery</label>
 
+                        <input class="btn-check" type="radio" name="question10" value="0" id="Q10-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q10-c">Champagne Moet et Chandon </label>
 
-                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
-                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Champagne Moet et Chandon </label>
+                        <input class="btn-check" type="radio" name="question10" value="correct" id="Q10-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q10-d">Champagne Ruinard</label>
 
-                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
-                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Champagne Ruinard</label>
-
-                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                        <a href="#a-ten" onclick="resultOne(10)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
 
                     </div>
                 </section>
 
-                <section id="a-one"
+                <section id="a-ten"
                     class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
 
                     <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
                         <br>
-                        <p id="resultat1" class=></p>
+                        <p id="resultat10" class=></p>
 
                         <p>La bonne réponse est :</p>
                         <h1 class="mb-3 fst-italic">Champagne Ruinard !</h1>
@@ -514,44 +514,12 @@
                         <br>
                     </div>
                     <img class="shadow" src="Quel est la première maison de Champagne de Reims ?" alt="Maison ruinard">
-                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    <a href="#result" id="bg-warning" onclick="getResults()"
                         class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
                 </section>
             </div>
             
-    <div>
-        <section id="q-two"
-            class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
-            <div class="dot bg shadow mt-2 fw-bold">
-                <p class="margintop" id="questionnumber2"></p>
-            </div>
-            <h1 id="bg-warning" class="question-title p-4 bg-warning border  w-75  text-white shadow">Comment se nomme
-                cette porte ? </h1>
-            <img class="shadow pt-2"
-                src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" width="250px"
-                height="250px">
-
-            <div class="debug btn-group-vertical pt-4 ">
-                <div>
-                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
-                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-a">Porte de
-                        Paris</label>
-
-                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
-                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-b">Porte de
-                        Terre</label>
-                </div>
-
-                <div>
-                    <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
-                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-c">Porte de Mars</label>
-
-                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
-                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-d">Porte de Sack</label>
-                </div>
-                <a href="#a-two" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
-            </div>
-        </section>
+    
 
 
 
@@ -673,7 +641,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="docs/assets/js/app.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
